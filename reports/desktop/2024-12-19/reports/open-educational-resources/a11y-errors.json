@@ -1,0 +1,205 @@
+[
+  {
+    "id": "aria-allowed-role",
+    "title": "Uses ARIA roles on incompatible elements",
+    "description": "Many HTML elements can only be assigned certain ARIA roles. Using ARIA roles where they are not allowed can interfere with the accessibility of the web page. [Learn more about ARIA roles](https://dequeuniversity.com/rules/axe/4.10/aria-allowed-role).",
+    "score": 0,
+    "scoreDisplayMode": "binary",
+    "details": {
+      "type": "table",
+      "headings": [
+        {
+          "key": "node",
+          "valueType": "node",
+          "subItemsHeading": {
+            "key": "relatedNode",
+            "valueType": "node"
+          },
+          "label": "Failing Elements"
+        }
+      ],
+      "items": [
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-0-LABEL",
+            "path": "5,HTML,1,BODY,15,DIV,5,HEADER,2,DIV,8,DIV,0,LABEL",
+            "selector": "header#navbar-main > div.navbar-header > div.menu-toggle-wrapper > label",
+            "boundingRect": {
+              "top": 47,
+              "bottom": 63,
+              "left": 1290,
+              "right": 1310,
+              "width": 20,
+              "height": 16
+            },
+            "snippet": "<label for=\"menu-toggle\" tabindex=\"0\" aria-label=\"Open Menu\" role=\"button\">",
+            "nodeLabel": "Open Menu",
+            "explanation": "Fix any of the following:\n  ARIA role button is not allowed for given element"
+          }
+        }
+      ],
+      "debugData": {
+        "type": "debugdata",
+        "impact": "minor",
+        "tags": [
+          "cat.aria",
+          "best-practice"
+        ]
+      }
+    },
+    "errorCount": 1
+  },
+  {
+    "id": "aria-prohibited-attr",
+    "title": "Elements use prohibited ARIA attributes",
+    "description": "Using ARIA attributes in roles where they are prohibited can mean that important information is not communicated to users of assistive technologies. [Learn more about prohibited ARIA roles](https://dequeuniversity.com/rules/axe/4.10/aria-prohibited-attr).",
+    "score": 0,
+    "scoreDisplayMode": "binary",
+    "details": {
+      "type": "table",
+      "headings": [
+        {
+          "key": "node",
+          "valueType": "node",
+          "subItemsHeading": {
+            "key": "relatedNode",
+            "valueType": "node"
+          },
+          "label": "Failing Elements"
+        }
+      ],
+      "items": [
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-1-A",
+            "path": "5,HTML,1,BODY,15,DIV,4,A",
+            "selector": "body.section-organization > div.dialog-off-canvas-main-canvas > a#top",
+            "boundingRect": {
+              "top": 110,
+              "bottom": 110,
+              "left": 0,
+              "right": 0,
+              "width": 0,
+              "height": 0
+            },
+            "snippet": "<a id=\"top\" data-uw-rm-kbnav=\"anohref\" tabindex=\"0\" aria-label=\"Open this option\" data-uw-rm-empty-ctrl=\"\">",
+            "nodeLabel": "Open this option",
+            "explanation": "Fix all of the following:\n  aria-label attribute cannot be used on a a with no valid role attribute."
+          }
+        },
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-2-A",
+            "path": "5,HTML,1,BODY,15,DIV,6,DIV,1,DIV,0,DIV,0,DIV,0,A",
+            "selector": "div.container > div.row > div#content > a#main-content",
+            "boundingRect": {
+              "top": 344,
+              "bottom": 344,
+              "left": 102,
+              "right": 102,
+              "width": 0,
+              "height": 0
+            },
+            "snippet": "<a id=\"main-content\" data-uw-rm-kbnav=\"anohref\" tabindex=\"0\" aria-label=\"Open this option\" data-uw-rm-empty-ctrl=\"\">",
+            "nodeLabel": "Open this option",
+            "explanation": "Fix all of the following:\n  aria-label attribute cannot be used on a a with no valid role attribute."
+          }
+        }
+      ],
+      "debugData": {
+        "type": "debugdata",
+        "impact": "serious",
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag412",
+          "EN-301-549",
+          "EN-9.4.1.2"
+        ]
+      }
+    },
+    "errorCount": 2
+  },
+  {
+    "id": "link-in-text-block",
+    "title": "Links rely on color to be distinguishable.",
+    "description": "Low-contrast text is difficult or impossible for many users to read. Link text that is discernible improves the experience for users with low vision. [Learn how to make links distinguishable](https://dequeuniversity.com/rules/axe/4.10/link-in-text-block).",
+    "score": 0,
+    "scoreDisplayMode": "binary",
+    "details": {
+      "type": "table",
+      "headings": [
+        {
+          "key": "node",
+          "valueType": "node",
+          "subItemsHeading": {
+            "key": "relatedNode",
+            "valueType": "node"
+          },
+          "label": "Failing Elements"
+        }
+      ],
+      "items": [
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-3-A",
+            "path": "5,HTML,1,BODY,15,DIV,6,DIV,1,DIV,0,DIV,0,DIV,5,SECTION,10,DIV,0,DIV,7,DIV,10,DIV,0,P,1,A",
+            "selector": "div.display-body > div.clearfix > p > a",
+            "boundingRect": {
+              "top": 617,
+              "bottom": 639,
+              "left": 214,
+              "right": 568,
+              "width": 355,
+              "height": 22
+            },
+            "snippet": "<a href=\"https://www.unesco.org/en/open-educational-resources\" data-uw-rm-brl=\"PR\" data-uw-original-href=\"https://www.unesco.org/en/open-educational-resources\">",
+            "nodeLabel": "Open Educational Resources | UNESCO",
+            "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 2.85:1 with the surrounding text. (Minimum contrast is 3:1, link text: #4d2de8, surrounding text: #000000)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+          },
+          "subItems": {
+            "type": "subitems",
+            "items": [
+              {
+                "relatedNode": {
+                  "type": "node",
+                  "lhId": "1-4-P",
+                  "path": "5,HTML,1,BODY,15,DIV,6,DIV,1,DIV,0,DIV,0,DIV,5,SECTION,10,DIV,0,DIV,7,DIV,10,DIV,0,P",
+                  "selector": "div.block-inner > div.display-body > div.clearfix > p",
+                  "boundingRect": {
+                    "top": 470,
+                    "bottom": 643,
+                    "left": 102,
+                    "right": 858,
+                    "width": 756,
+                    "height": 173
+                  },
+                  "snippet": "<p>",
+                  "nodeLabel": "United Nations Educational, Scientific, and Cultural Organization (UNESCO) defi…"
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "debugData": {
+        "type": "debugdata",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2a",
+          "wcag141",
+          "TTv5",
+          "TT13.a",
+          "EN-301-549",
+          "EN-9.1.4.1"
+        ]
+      }
+    },
+    "errorCount": 1
+  }
+]

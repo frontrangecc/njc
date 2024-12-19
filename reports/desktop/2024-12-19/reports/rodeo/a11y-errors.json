@@ -1,0 +1,243 @@
+[
+  {
+    "id": "aria-allowed-role",
+    "title": "Uses ARIA roles on incompatible elements",
+    "description": "Many HTML elements can only be assigned certain ARIA roles. Using ARIA roles where they are not allowed can interfere with the accessibility of the web page. [Learn more about ARIA roles](https://dequeuniversity.com/rules/axe/4.10/aria-allowed-role).",
+    "score": 0,
+    "scoreDisplayMode": "binary",
+    "details": {
+      "type": "table",
+      "headings": [
+        {
+          "key": "node",
+          "valueType": "node",
+          "subItemsHeading": {
+            "key": "relatedNode",
+            "valueType": "node"
+          },
+          "label": "Failing Elements"
+        }
+      ],
+      "items": [
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-0-LABEL",
+            "path": "5,HTML,1,BODY,15,DIV,5,HEADER,2,DIV,8,DIV,0,LABEL",
+            "selector": "header#navbar-main > div.navbar-header > div.menu-toggle-wrapper > label",
+            "boundingRect": {
+              "top": 47,
+              "bottom": 63,
+              "left": 1290,
+              "right": 1310,
+              "width": 20,
+              "height": 16
+            },
+            "snippet": "<label for=\"menu-toggle\" tabindex=\"0\" aria-label=\"Open Menu\" role=\"button\">",
+            "nodeLabel": "Open Menu",
+            "explanation": "Fix any of the following:\n  ARIA role button is not allowed for given element"
+          }
+        }
+      ],
+      "debugData": {
+        "type": "debugdata",
+        "impact": "minor",
+        "tags": [
+          "cat.aria",
+          "best-practice"
+        ]
+      }
+    },
+    "errorCount": 1
+  },
+  {
+    "id": "aria-prohibited-attr",
+    "title": "Elements use prohibited ARIA attributes",
+    "description": "Using ARIA attributes in roles where they are prohibited can mean that important information is not communicated to users of assistive technologies. [Learn more about prohibited ARIA roles](https://dequeuniversity.com/rules/axe/4.10/aria-prohibited-attr).",
+    "score": 0,
+    "scoreDisplayMode": "binary",
+    "details": {
+      "type": "table",
+      "headings": [
+        {
+          "key": "node",
+          "valueType": "node",
+          "subItemsHeading": {
+            "key": "relatedNode",
+            "valueType": "node"
+          },
+          "label": "Failing Elements"
+        }
+      ],
+      "items": [
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-1-A",
+            "path": "5,HTML,1,BODY,15,DIV,4,A",
+            "selector": "body.section-organization > div.dialog-off-canvas-main-canvas > a#top",
+            "boundingRect": {
+              "top": 110,
+              "bottom": 110,
+              "left": 0,
+              "right": 0,
+              "width": 0,
+              "height": 0
+            },
+            "snippet": "<a id=\"top\" data-uw-rm-kbnav=\"anohref\" tabindex=\"0\" aria-label=\"Open this option\" data-uw-rm-empty-ctrl=\"\">",
+            "nodeLabel": "Open this option",
+            "explanation": "Fix all of the following:\n  aria-label attribute cannot be used on a a with no valid role attribute."
+          }
+        },
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-2-A",
+            "path": "5,HTML,1,BODY,15,DIV,6,DIV,1,DIV,0,DIV,0,DIV,0,A",
+            "selector": "div.container > div.row > div#content > a#main-content",
+            "boundingRect": {
+              "top": 344,
+              "bottom": 344,
+              "left": 102,
+              "right": 102,
+              "width": 0,
+              "height": 0
+            },
+            "snippet": "<a id=\"main-content\" data-uw-rm-kbnav=\"anohref\" tabindex=\"0\" aria-label=\"Open this option\" data-uw-rm-empty-ctrl=\"\">",
+            "nodeLabel": "Open this option",
+            "explanation": "Fix all of the following:\n  aria-label attribute cannot be used on a a with no valid role attribute."
+          }
+        }
+      ],
+      "debugData": {
+        "type": "debugdata",
+        "impact": "serious",
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag412",
+          "EN-301-549",
+          "EN-9.4.1.2"
+        ]
+      }
+    },
+    "errorCount": 2
+  },
+  {
+    "id": "target-size",
+    "title": "Touch targets do not have sufficient size or spacing.",
+    "description": "Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.10/target-size).",
+    "score": 0,
+    "scoreDisplayMode": "binary",
+    "details": {
+      "type": "table",
+      "headings": [
+        {
+          "key": "node",
+          "valueType": "node",
+          "subItemsHeading": {
+            "key": "relatedNode",
+            "valueType": "node"
+          },
+          "label": "Failing Elements"
+        }
+      ],
+      "items": [
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-3-A",
+            "path": "5,HTML,1,BODY,15,DIV,6,DIV,1,DIV,0,DIV,0,DIV,5,SECTION,10,DIV,0,DIV,7,DIV,10,DIV,6,P,1,A",
+            "selector": "div.display-body > div.clearfix > p > a",
+            "boundingRect": {
+              "top": 1447,
+              "bottom": 1469,
+              "left": 392,
+              "right": 433,
+              "width": 41,
+              "height": 22
+            },
+            "snippet": "<a href=\"https://www.facebook.com/njcrodeo/\" target=\"_blank\" aria-label=\"Visit us on Facebook by clicking here - open in a new tab\" data-uw-rm-vglnk=\"\" uw-rm-vague-link-id=\"https://www.facebook.com/njcrodeo/$here\" data-uw-rm-brl=\"PR\" data-uw-original-href=\"https://www.facebook.com/njcrodeo/\" data-uw-rm-ext-link=\"\" uw-rm-external-link-id=\"https://www.facebook.com/njcrodeo/$visitusonfacebookbyclickinghere\">",
+            "nodeLabel": "here",
+            "explanation": "Fix any of the following:\n  Target has insufficient size (40.9px by 22px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 20.8px instead of at least 24px."
+          },
+          "subItems": {
+            "type": "subitems",
+            "items": [
+              {
+                "relatedNode": {
+                  "type": "node",
+                  "lhId": "1-4-A",
+                  "path": "5,HTML,1,BODY,15,DIV,6,DIV,1,DIV,0,DIV,0,DIV,5,SECTION,10,DIV,0,DIV,7,DIV,10,DIV,6,P,2,A",
+                  "selector": "div.display-body > div.clearfix > p > a",
+                  "boundingRect": {
+                    "top": 1447,
+                    "bottom": 1469,
+                    "left": 433,
+                    "right": 437,
+                    "width": 4,
+                    "height": 22
+                  },
+                  "snippet": "<a href=\"https://www.facebook.com/njcrodeo/\" data-uw-rm-brl=\"PR\" data-uw-original-href=\"https://www.facebook.com/njcrodeo/\">",
+                  "nodeLabel": "."
+                }
+              }
+            ]
+          }
+        },
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-4-A",
+            "path": "5,HTML,1,BODY,15,DIV,6,DIV,1,DIV,0,DIV,0,DIV,5,SECTION,10,DIV,0,DIV,7,DIV,10,DIV,6,P,2,A",
+            "selector": "div.display-body > div.clearfix > p > a",
+            "boundingRect": {
+              "top": 1447,
+              "bottom": 1469,
+              "left": 433,
+              "right": 437,
+              "width": 4,
+              "height": 22
+            },
+            "snippet": "<a href=\"https://www.facebook.com/njcrodeo/\" data-uw-rm-brl=\"PR\" data-uw-original-href=\"https://www.facebook.com/njcrodeo/\">",
+            "nodeLabel": ".",
+            "explanation": "Fix any of the following:\n  Target has insufficient size (3.8px by 22px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 3.8px instead of at least 24px."
+          },
+          "subItems": {
+            "type": "subitems",
+            "items": [
+              {
+                "relatedNode": {
+                  "type": "node",
+                  "lhId": "1-3-A",
+                  "path": "5,HTML,1,BODY,15,DIV,6,DIV,1,DIV,0,DIV,0,DIV,5,SECTION,10,DIV,0,DIV,7,DIV,10,DIV,6,P,1,A",
+                  "selector": "div.display-body > div.clearfix > p > a",
+                  "boundingRect": {
+                    "top": 1447,
+                    "bottom": 1469,
+                    "left": 392,
+                    "right": 433,
+                    "width": 41,
+                    "height": 22
+                  },
+                  "snippet": "<a href=\"https://www.facebook.com/njcrodeo/\" target=\"_blank\" aria-label=\"Visit us on Facebook by clicking here - open in a new tab\" data-uw-rm-vglnk=\"\" uw-rm-vague-link-id=\"https://www.facebook.com/njcrodeo/$here\" data-uw-rm-brl=\"PR\" data-uw-original-href=\"https://www.facebook.com/njcrodeo/\" data-uw-rm-ext-link=\"\" uw-rm-external-link-id=\"https://www.facebook.com/njcrodeo/$visitusonfacebookbyclickinghere\">",
+                  "nodeLabel": "here"
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "debugData": {
+        "type": "debugdata",
+        "impact": "serious",
+        "tags": [
+          "cat.sensory-and-visual-cues",
+          "wcag22aa",
+          "wcag258"
+        ]
+      }
+    },
+    "errorCount": 2
+  }
+]

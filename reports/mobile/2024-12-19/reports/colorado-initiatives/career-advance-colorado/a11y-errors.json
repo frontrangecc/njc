@@ -1,0 +1,373 @@
+[
+  {
+    "id": "aria-allowed-role",
+    "title": "Uses ARIA roles on incompatible elements",
+    "description": "Many HTML elements can only be assigned certain ARIA roles. Using ARIA roles where they are not allowed can interfere with the accessibility of the web page. [Learn more about ARIA roles](https://dequeuniversity.com/rules/axe/4.10/aria-allowed-role).",
+    "score": 0,
+    "scoreDisplayMode": "binary",
+    "details": {
+      "type": "table",
+      "headings": [
+        {
+          "key": "node",
+          "valueType": "node",
+          "subItemsHeading": {
+            "key": "relatedNode",
+            "valueType": "node"
+          },
+          "label": "Failing Elements"
+        }
+      ],
+      "items": [
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-0-LABEL",
+            "path": "5,HTML,1,BODY,14,DIV,5,HEADER,2,DIV,8,DIV,0,LABEL",
+            "selector": "header#navbar-main > div.navbar-header > div.menu-toggle-wrapper > label",
+            "boundingRect": {
+              "top": 22,
+              "bottom": 38,
+              "left": 372,
+              "right": 392,
+              "width": 20,
+              "height": 16
+            },
+            "snippet": "<label for=\"menu-toggle\" tabindex=\"0\" aria-label=\"Open Menu\" role=\"button\">",
+            "nodeLabel": "Open Menu",
+            "explanation": "Fix any of the following:\n  ARIA role button is not allowed for given element"
+          }
+        }
+      ],
+      "debugData": {
+        "type": "debugdata",
+        "impact": "minor",
+        "tags": [
+          "cat.aria",
+          "best-practice"
+        ]
+      }
+    },
+    "errorCount": 1
+  },
+  {
+    "id": "aria-prohibited-attr",
+    "title": "Elements use prohibited ARIA attributes",
+    "description": "Using ARIA attributes in roles where they are prohibited can mean that important information is not communicated to users of assistive technologies. [Learn more about prohibited ARIA roles](https://dequeuniversity.com/rules/axe/4.10/aria-prohibited-attr).",
+    "score": 0,
+    "scoreDisplayMode": "binary",
+    "details": {
+      "type": "table",
+      "headings": [
+        {
+          "key": "node",
+          "valueType": "node",
+          "subItemsHeading": {
+            "key": "relatedNode",
+            "valueType": "node"
+          },
+          "label": "Failing Elements"
+        }
+      ],
+      "items": [
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-1-A",
+            "path": "5,HTML,1,BODY,14,DIV,4,A",
+            "selector": "body.section-organization > div.dialog-off-canvas-main-canvas > a#top",
+            "boundingRect": {
+              "top": 60,
+              "bottom": 60,
+              "left": 0,
+              "right": 0,
+              "width": 0,
+              "height": 0
+            },
+            "snippet": "<a id=\"top\" aria-label=\"Open this option\" data-uw-rm-empty-ctrl=\"\">",
+            "nodeLabel": "Open this option",
+            "explanation": "Fix all of the following:\n  aria-label attribute cannot be used on a a with no valid role attribute."
+          }
+        },
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-2-A",
+            "path": "5,HTML,1,BODY,14,DIV,6,DIV,1,DIV,0,DIV,0,DIV,0,A",
+            "selector": "div.container > div.row > div#content > a#main-content",
+            "boundingRect": {
+              "top": 264,
+              "bottom": 264,
+              "left": 12,
+              "right": 12,
+              "width": 0,
+              "height": 0
+            },
+            "snippet": "<a id=\"main-content\" aria-label=\"Open this option\" data-uw-rm-empty-ctrl=\"\">",
+            "nodeLabel": "Open this option",
+            "explanation": "Fix all of the following:\n  aria-label attribute cannot be used on a a with no valid role attribute."
+          }
+        }
+      ],
+      "debugData": {
+        "type": "debugdata",
+        "impact": "serious",
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag412",
+          "EN-301-549",
+          "EN-9.4.1.2"
+        ]
+      }
+    },
+    "errorCount": 2
+  },
+  {
+    "id": "link-in-text-block",
+    "title": "Links rely on color to be distinguishable.",
+    "description": "Low-contrast text is difficult or impossible for many users to read. Link text that is discernible improves the experience for users with low vision. [Learn how to make links distinguishable](https://dequeuniversity.com/rules/axe/4.10/link-in-text-block).",
+    "score": 0,
+    "scoreDisplayMode": "binary",
+    "details": {
+      "type": "table",
+      "headings": [
+        {
+          "key": "node",
+          "valueType": "node",
+          "subItemsHeading": {
+            "key": "relatedNode",
+            "valueType": "node"
+          },
+          "label": "Failing Elements"
+        }
+      ],
+      "items": [
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-3-A",
+            "path": "5,HTML,1,BODY,14,DIV,6,DIV,1,DIV,0,DIV,0,DIV,5,SECTION,22,DIV,0,DIV,7,DIV,4,DIV,13,P,1,A",
+            "selector": "div.node > div.clearfix > p > a",
+            "boundingRect": {
+              "top": 1205,
+              "bottom": 1225,
+              "left": 224,
+              "right": 279,
+              "width": 55,
+              "height": 20
+            },
+            "snippet": "<a href=\"https://studentaid.gov/h/apply-for-aid/fafsa\" data-uw-rm-brl=\"PR\" data-uw-original-href=\"https://studentaid.gov/h/apply-for-aid/fafsa\">",
+            "nodeLabel": "federal",
+            "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 2.85:1 with the surrounding text. (Minimum contrast is 3:1, link text: #4d2de8, surrounding text: #000000)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+          },
+          "subItems": {
+            "type": "subitems",
+            "items": [
+              {
+                "relatedNode": {
+                  "type": "node",
+                  "lhId": "1-4-P",
+                  "path": "5,HTML,1,BODY,14,DIV,6,DIV,1,DIV,0,DIV,0,DIV,5,SECTION,22,DIV,0,DIV,7,DIV,4,DIV,13,P",
+                  "selector": "div.block-inner > div.node > div.clearfix > p",
+                  "boundingRect": {
+                    "top": 1176,
+                    "bottom": 1330,
+                    "left": 12,
+                    "right": 400,
+                    "width": 388,
+                    "height": 154
+                  },
+                  "snippet": "<p>",
+                  "nodeLabel": "To enroll in this program, you must have a completed application for federal an…"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-5-A",
+            "path": "5,HTML,1,BODY,14,DIV,6,DIV,1,DIV,0,DIV,0,DIV,5,SECTION,22,DIV,0,DIV,7,DIV,4,DIV,13,P,3,A",
+            "selector": "div.node > div.clearfix > p > a",
+            "boundingRect": {
+              "top": 1205,
+              "bottom": 1225,
+              "left": 339,
+              "right": 378,
+              "width": 39,
+              "height": 20
+            },
+            "snippet": "<a href=\"https://cdhe.colorado.gov/students/preparing-for-college/colorado-applicat…\" data-uw-rm-brl=\"PR\" data-uw-original-href=\"https://cdhe.colorado.gov/students/preparing-for-college/colorado-applicat…\">",
+            "nodeLabel": "state",
+            "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 2.85:1 with the surrounding text. (Minimum contrast is 3:1, link text: #4d2de8, surrounding text: #000000)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+          },
+          "subItems": {
+            "type": "subitems",
+            "items": [
+              {
+                "relatedNode": {
+                  "type": "node",
+                  "lhId": "1-4-P",
+                  "path": "5,HTML,1,BODY,14,DIV,6,DIV,1,DIV,0,DIV,0,DIV,5,SECTION,22,DIV,0,DIV,7,DIV,4,DIV,13,P",
+                  "selector": "div.block-inner > div.node > div.clearfix > p",
+                  "boundingRect": {
+                    "top": 1176,
+                    "bottom": 1330,
+                    "left": 12,
+                    "right": 400,
+                    "width": 388,
+                    "height": 154
+                  },
+                  "snippet": "<p>",
+                  "nodeLabel": "To enroll in this program, you must have a completed application for federal an…"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-6-A",
+            "path": "5,HTML,1,BODY,14,DIV,6,DIV,1,DIV,0,DIV,0,DIV,5,SECTION,22,DIV,0,DIV,7,DIV,4,DIV,13,P,5,A",
+            "selector": "div.node > div.clearfix > p > a",
+            "boundingRect": {
+              "top": 1282,
+              "bottom": 1301,
+              "left": 144,
+              "right": 311,
+              "width": 168,
+              "height": 20
+            },
+            "snippet": "<a href=\"https://www.njc.edu/financialaid%40njc.edu\" data-uw-rm-brl=\"PR\" data-uw-original-href=\"https://www.njc.edu/financialaid%40njc.edu\">",
+            "nodeLabel": "financialaid@njc.edu",
+            "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 2.85:1 with the surrounding text. (Minimum contrast is 3:1, link text: #4d2de8, surrounding text: #000000)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+          },
+          "subItems": {
+            "type": "subitems",
+            "items": [
+              {
+                "relatedNode": {
+                  "type": "node",
+                  "lhId": "1-4-P",
+                  "path": "5,HTML,1,BODY,14,DIV,6,DIV,1,DIV,0,DIV,0,DIV,5,SECTION,22,DIV,0,DIV,7,DIV,4,DIV,13,P",
+                  "selector": "div.block-inner > div.node > div.clearfix > p",
+                  "boundingRect": {
+                    "top": 1176,
+                    "bottom": 1330,
+                    "left": 12,
+                    "right": 400,
+                    "width": 388,
+                    "height": 154
+                  },
+                  "snippet": "<p>",
+                  "nodeLabel": "To enroll in this program, you must have a completed application for federal an…"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-7-A",
+            "path": "5,HTML,1,BODY,14,DIV,6,DIV,1,DIV,0,DIV,0,DIV,5,SECTION,22,DIV,0,DIV,7,DIV,4,DIV,21,P,1,A",
+            "selector": "div.node > div.clearfix > p > a",
+            "boundingRect": {
+              "top": 3208,
+              "bottom": 3227,
+              "left": 87,
+              "right": 267,
+              "width": 180,
+              "height": 20
+            },
+            "snippet": "<a href=\"https://www.njc.edu/records/academic-forms\" data-uw-rm-brl=\"PR\" data-uw-original-href=\"https://www.njc.edu/records/academic-forms\">",
+            "nodeLabel": "Change of Major Form",
+            "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 2.85:1 with the surrounding text. (Minimum contrast is 3:1, link text: #4d2de8, surrounding text: #000000)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+          },
+          "subItems": {
+            "type": "subitems",
+            "items": [
+              {
+                "relatedNode": {
+                  "type": "node",
+                  "lhId": "1-8-P",
+                  "path": "5,HTML,1,BODY,14,DIV,6,DIV,1,DIV,0,DIV,0,DIV,5,SECTION,22,DIV,0,DIV,7,DIV,4,DIV,21,P",
+                  "selector": "div.block-inner > div.node > div.clearfix > p",
+                  "boundingRect": {
+                    "top": 3000,
+                    "bottom": 3256,
+                    "left": 12,
+                    "right": 400,
+                    "width": 388,
+                    "height": 256
+                  },
+                  "snippet": "<p>",
+                  "nodeLabel": "If you need assistance declaring your degree or certificate program, you must c…"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-9-A",
+            "path": "5,HTML,1,BODY,14,DIV,6,DIV,1,DIV,0,DIV,0,DIV,5,SECTION,22,DIV,0,DIV,7,DIV,4,DIV,24,P,1,A",
+            "selector": "div.node > div.clearfix > p > a",
+            "boundingRect": {
+              "top": 3511,
+              "bottom": 3556,
+              "left": 12,
+              "right": 370,
+              "width": 358,
+              "height": 45
+            },
+            "snippet": "<a href=\"https://www.njc.edu/care-forward-colorado\" data-uw-rm-brl=\"PR\" data-uw-original-href=\"https://www.njc.edu/care-forward-colorado\">",
+            "nodeLabel": "Care Forward Colorado | Northeastern Junior College (njc.edu)",
+            "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 2.85:1 with the surrounding text. (Minimum contrast is 3:1, link text: #4d2de8, surrounding text: #000000)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+          },
+          "subItems": {
+            "type": "subitems",
+            "items": [
+              {
+                "relatedNode": {
+                  "type": "node",
+                  "lhId": "1-10-P",
+                  "path": "5,HTML,1,BODY,14,DIV,6,DIV,1,DIV,0,DIV,0,DIV,5,SECTION,22,DIV,0,DIV,7,DIV,4,DIV,24,P",
+                  "selector": "div.block-inner > div.node > div.clearfix > p",
+                  "boundingRect": {
+                    "top": 3432,
+                    "bottom": 3585,
+                    "left": 12,
+                    "right": 400,
+                    "width": 388,
+                    "height": 154
+                  },
+                  "snippet": "<p>",
+                  "nodeLabel": "The state’s Care Forward Colorado program covers all tuition, fees, and course …"
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "debugData": {
+        "type": "debugdata",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2a",
+          "wcag141",
+          "TTv5",
+          "TT13.a",
+          "EN-301-549",
+          "EN-9.1.4.1"
+        ]
+      }
+    },
+    "errorCount": 5
+  }
+]
