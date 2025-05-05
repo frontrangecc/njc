@@ -1,0 +1,403 @@
+[
+  {
+    "id": "aria-allowed-role",
+    "title": "Uses ARIA roles on incompatible elements",
+    "description": "Many HTML elements can only be assigned certain ARIA roles. Using ARIA roles where they are not allowed can interfere with the accessibility of the web page. [Learn more about ARIA roles](https://dequeuniversity.com/rules/axe/4.10/aria-allowed-role).",
+    "score": 0,
+    "scoreDisplayMode": "binary",
+    "details": {
+      "type": "table",
+      "headings": [
+        {
+          "key": "node",
+          "valueType": "node",
+          "subItemsHeading": {
+            "key": "relatedNode",
+            "valueType": "node"
+          },
+          "label": "Failing Elements"
+        }
+      ],
+      "items": [
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-0-LABEL",
+            "path": "5,HTML,1,BODY,14,DIV,5,HEADER,2,DIV,8,DIV,0,LABEL",
+            "selector": "header#navbar-main > div.navbar-header > div.menu-toggle-wrapper > label",
+            "boundingRect": {
+              "top": 94,
+              "bottom": 110,
+              "left": 372,
+              "right": 392,
+              "width": 20,
+              "height": 16
+            },
+            "snippet": "<label for=\"menu-toggle\" tabindex=\"0\" aria-label=\"Open Menu\" role=\"button\">",
+            "nodeLabel": "Open Menu",
+            "explanation": "Fix any of the following:\n  ARIA role button is not allowed for given element"
+          }
+        }
+      ],
+      "debugData": {
+        "type": "debugdata",
+        "impact": "minor",
+        "tags": [
+          "cat.aria",
+          "best-practice"
+        ]
+      }
+    },
+    "errorCount": 1
+  },
+  {
+    "id": "aria-hidden-focus",
+    "title": "`[aria-hidden=\"true\"]` elements contain focusable descendents",
+    "description": "Focusable descendents within an `[aria-hidden=\"true\"]` element prevent those interactive elements from being available to users of assistive technologies like screen readers. [Learn how `aria-hidden` affects focusable elements](https://dequeuniversity.com/rules/axe/4.10/aria-hidden-focus).",
+    "score": 0,
+    "scoreDisplayMode": "binary",
+    "details": {
+      "type": "table",
+      "headings": [
+        {
+          "key": "node",
+          "valueType": "node",
+          "subItemsHeading": {
+            "key": "relatedNode",
+            "valueType": "node"
+          },
+          "label": "Failing Elements"
+        }
+      ],
+      "items": [
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-1-DIV",
+            "path": "5,HTML,1,BODY,14,DIV,11,SECTION,16,DIV,0,DIV,3,DIV,3,DIV,1,DIV,6,DIV,0,DIV,3,DIV,0,DIV,2,DIV",
+            "selector": "div#slick-1f94a42b84e > div.slick-list > div.slick-track > div.slick__slide",
+            "boundingRect": {
+              "top": 5631,
+              "bottom": 6078,
+              "left": 403,
+              "right": 797,
+              "width": 394,
+              "height": 448
+            },
+            "snippet": "<div class=\"slick__slide slide slide--1 slick-slide\" data-slick-index=\"1\" aria-hidden=\"true\" tabindex=\"-1\" style=\"width: 394px;\" role=\"group\" aria-roledescription=\"slide\">",
+            "nodeLabel": "Northeastern Junior College announces new RISE grant project team\nJuly 15, 2021",
+            "explanation": "Fix all of the following:\n  Focusable content should have tabindex=\"-1\" or be removed from the DOM"
+          },
+          "subItems": {
+            "type": "subitems",
+            "items": [
+              {
+                "relatedNode": {
+                  "type": "node",
+                  "lhId": "1-2-A",
+                  "path": "5,HTML,1,BODY,14,DIV,11,SECTION,16,DIV,0,DIV,3,DIV,3,DIV,1,DIV,6,DIV,0,DIV,3,DIV,0,DIV,2,DIV,3,DIV,1,DIV,0,DIV,3,DIV,0,SPAN,3,A",
+                  "selector": "div.slide__description > div.views-field > span.field-content > a.news-container",
+                  "boundingRect": {
+                    "top": 5676,
+                    "bottom": 6063,
+                    "left": 418,
+                    "right": 782,
+                    "width": 364,
+                    "height": 388
+                  },
+                  "snippet": "<a href=\"/news/071521/northeastern-junior-college-announces-new-rise-grant-project-…\" class=\"news-container\" tabindex=\"0\" data-uw-rm-brl=\"PR\" data-uw-original-href=\"https://www.njc.edu/news/071521/northeastern-junior-college-announces-new-…\">",
+                  "nodeLabel": "Northeastern Junior College announces new RISE grant project team\nJuly 15, 2021"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-3-DIV",
+            "path": "5,HTML,1,BODY,14,DIV,11,SECTION,16,DIV,0,DIV,3,DIV,3,DIV,1,DIV,6,DIV,0,DIV,3,DIV,0,DIV,3,DIV",
+            "selector": "div#slick-1f94a42b84e > div.slick-list > div.slick-track > div.slick__slide",
+            "boundingRect": {
+              "top": 5631,
+              "bottom": 5875,
+              "left": 797,
+              "right": 1191,
+              "width": 394,
+              "height": 244
+            },
+            "snippet": "<div class=\"slick__slide slide slide--2 slick-slide\" data-slick-index=\"2\" aria-hidden=\"true\" tabindex=\"-1\" style=\"width: 394px;\" role=\"group\" aria-roledescription=\"slide\">",
+            "nodeLabel": "Northeastern Junior College honors 5 at GED commencement ceremony\nJune 9, 2021",
+            "explanation": "Fix all of the following:\n  Focusable content should have tabindex=\"-1\" or be removed from the DOM"
+          },
+          "subItems": {
+            "type": "subitems",
+            "items": [
+              {
+                "relatedNode": {
+                  "type": "node",
+                  "lhId": "1-4-A",
+                  "path": "5,HTML,1,BODY,14,DIV,11,SECTION,16,DIV,0,DIV,3,DIV,3,DIV,1,DIV,6,DIV,0,DIV,3,DIV,0,DIV,3,DIV,3,DIV,1,DIV,0,DIV,3,DIV,0,SPAN,3,A",
+                  "selector": "div.slide__description > div.views-field > span.field-content > a.news-container",
+                  "boundingRect": {
+                    "top": 5676,
+                    "bottom": 5860,
+                    "left": 812,
+                    "right": 1176,
+                    "width": 364,
+                    "height": 184
+                  },
+                  "snippet": "<a href=\"/news/060921/northeastern-junior-college-honors-5-ged-commencement-ceremony\" class=\"news-container\" tabindex=\"0\" data-uw-rm-brl=\"PR\" data-uw-original-href=\"https://www.njc.edu/news/060921/northeastern-junior-college-honors-5-ged-c…\">",
+                  "nodeLabel": "Northeastern Junior College honors 5 at GED commencement ceremony\nJune 9, 2021"
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "debugData": {
+        "type": "debugdata",
+        "impact": "serious",
+        "tags": [
+          "cat.name-role-value",
+          "wcag2a",
+          "wcag412",
+          "TTv5",
+          "TT6.a",
+          "EN-301-549",
+          "EN-9.4.1.2"
+        ]
+      }
+    },
+    "errorCount": 2
+  },
+  {
+    "id": "aria-prohibited-attr",
+    "title": "Elements use prohibited ARIA attributes",
+    "description": "Using ARIA attributes in roles where they are prohibited can mean that important information is not communicated to users of assistive technologies. [Learn more about prohibited ARIA roles](https://dequeuniversity.com/rules/axe/4.10/aria-prohibited-attr).",
+    "score": 0,
+    "scoreDisplayMode": "binary",
+    "details": {
+      "type": "table",
+      "headings": [
+        {
+          "key": "node",
+          "valueType": "node",
+          "subItemsHeading": {
+            "key": "relatedNode",
+            "valueType": "node"
+          },
+          "label": "Failing Elements"
+        }
+      ],
+      "items": [
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-5-A",
+            "path": "5,HTML,1,BODY,14,DIV,4,A",
+            "selector": "body.section-organization > div.dialog-off-canvas-main-canvas > a#top",
+            "boundingRect": {
+              "top": 117,
+              "bottom": 117,
+              "left": 0,
+              "right": 0,
+              "width": 0,
+              "height": 0
+            },
+            "snippet": "<a id=\"top\" aria-label=\"Open this option\" data-uw-rm-empty-ctrl=\"\">",
+            "nodeLabel": "Open this option",
+            "explanation": "Fix all of the following:\n  aria-label attribute cannot be used on a a with no valid role attribute."
+          }
+        },
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-6-A",
+            "path": "5,HTML,1,BODY,14,DIV,6,DIV,1,DIV,0,DIV,0,DIV,0,A",
+            "selector": "div.container > div.row > div#content > a#main-content",
+            "boundingRect": {
+              "top": 355,
+              "bottom": 355,
+              "left": 12,
+              "right": 12,
+              "width": 0,
+              "height": 0
+            },
+            "snippet": "<a id=\"main-content\" aria-label=\"Open this option\" data-uw-rm-empty-ctrl=\"\">",
+            "nodeLabel": "Open this option",
+            "explanation": "Fix all of the following:\n  aria-label attribute cannot be used on a a with no valid role attribute."
+          }
+        }
+      ],
+      "debugData": {
+        "type": "debugdata",
+        "impact": "serious",
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag412",
+          "EN-301-549",
+          "EN-9.4.1.2"
+        ]
+      }
+    },
+    "errorCount": 2
+  },
+  {
+    "id": "color-contrast",
+    "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+    "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.10/color-contrast).",
+    "score": 0,
+    "scoreDisplayMode": "binary",
+    "details": {
+      "type": "table",
+      "headings": [
+        {
+          "key": "node",
+          "valueType": "node",
+          "subItemsHeading": {
+            "key": "relatedNode",
+            "valueType": "node"
+          },
+          "label": "Failing Elements"
+        }
+      ],
+      "items": [
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-7-DIV",
+            "path": "5,HTML,1,BODY,14,DIV,6,DIV,1,DIV,0,DIV,0,DIV,5,SECTION,22,DIV,0,DIV,7,DIV,4,DIV,7,TABLE,0,THEAD,0,TR,0,TH,0,H6,0,DIV",
+            "selector": "tr > th > h6 > div.sc-center",
+            "boundingRect": {
+              "top": 1211,
+              "bottom": 1228,
+              "left": 28,
+              "right": 464,
+              "width": 436,
+              "height": 16
+            },
+            "snippet": "<div class=\"sc-center\">",
+            "nodeLabel": "2024 CDL SCHEDULE",
+            "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 2.81 (foreground color: #000000, background color: #555555, font size: 9.8pt (13px), font weight: bold). Expected contrast ratio of 4.5:1"
+          },
+          "subItems": {
+            "type": "subitems",
+            "items": [
+              {
+                "relatedNode": {
+                  "type": "node",
+                  "lhId": "1-8-TH",
+                  "path": "5,HTML,1,BODY,14,DIV,6,DIV,1,DIV,0,DIV,0,DIV,5,SECTION,22,DIV,0,DIV,7,DIV,4,DIV,7,TABLE,0,THEAD,0,TR,0,TH",
+                  "selector": "table > thead > tr > th",
+                  "boundingRect": {
+                    "top": 1138,
+                    "bottom": 1241,
+                    "left": 13,
+                    "right": 480,
+                    "width": 467,
+                    "height": 104
+                  },
+                  "snippet": "<th colspan=\"6\">",
+                  "nodeLabel": "                                                                               …"
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "debugData": {
+        "type": "debugdata",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2aa",
+          "wcag143",
+          "TTv5",
+          "TT13.c",
+          "EN-301-549",
+          "EN-9.1.4.3",
+          "ACT"
+        ]
+      }
+    },
+    "errorCount": 1
+  },
+  {
+    "id": "table-fake-caption",
+    "title": "Tables do not use `<caption>` instead of cells with the `[colspan]` attribute to indicate a caption.",
+    "description": "Screen readers have features to make navigating tables easier. Ensuring that tables use the actual caption element instead of cells with the `[colspan]` attribute may improve the experience for screen reader users. [Learn more about captions](https://dequeuniversity.com/rules/axe/4.10/table-fake-caption).",
+    "score": 0,
+    "scoreDisplayMode": "binary",
+    "details": {
+      "type": "table",
+      "headings": [
+        {
+          "key": "node",
+          "valueType": "node",
+          "subItemsHeading": {
+            "key": "relatedNode",
+            "valueType": "node"
+          },
+          "label": "Failing Elements"
+        }
+      ],
+      "items": [
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-9-TABLE",
+            "path": "5,HTML,1,BODY,14,DIV,6,DIV,1,DIV,0,DIV,0,DIV,5,SECTION,22,DIV,0,DIV,7,DIV,4,DIV,7,TABLE",
+            "selector": "div.block-inner > div.node > div.clearfix > table",
+            "boundingRect": {
+              "top": 1137,
+              "bottom": 2037,
+              "left": 12,
+              "right": 480,
+              "width": 468,
+              "height": 900
+            },
+            "snippet": "<table width=\"500\">",
+            "nodeLabel": "                                                                               …",
+            "explanation": "Fix all of the following:\n  The first child of the table should be a caption instead of a table cell"
+          }
+        },
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-10-TABLE",
+            "path": "5,HTML,1,BODY,14,DIV,6,DIV,1,DIV,0,DIV,0,DIV,5,SECTION,22,DIV,0,DIV,7,DIV,4,DIV,8,TABLE",
+            "selector": "div.block-inner > div.node > div.clearfix > table",
+            "boundingRect": {
+              "top": 2087,
+              "bottom": 2427,
+              "left": 12,
+              "right": 400,
+              "width": 388,
+              "height": 341
+            },
+            "snippet": "<table>",
+            "nodeLabel": "2024 - 2025 CDL CLASS-A FEES\n\nRegistration Fee\t$30\nClass-A Road and Range with …",
+            "explanation": "Fix all of the following:\n  The first child of the table should be a caption instead of a table cell"
+          }
+        }
+      ],
+      "debugData": {
+        "type": "debugdata",
+        "impact": "serious",
+        "tags": [
+          "cat.tables",
+          "experimental",
+          "wcag2a",
+          "wcag131",
+          "section508",
+          "section508.22.g",
+          "EN-301-549",
+          "EN-9.1.3.1"
+        ]
+      }
+    },
+    "errorCount": 2
+  }
+]

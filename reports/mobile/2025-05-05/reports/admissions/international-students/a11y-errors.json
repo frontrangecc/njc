@@ -1,0 +1,301 @@
+[
+  {
+    "id": "aria-allowed-attr",
+    "title": "`[aria-*]` attributes do not match their roles",
+    "description": "Each ARIA `role` supports a specific subset of `aria-*` attributes. Mismatching these invalidates the `aria-*` attributes. [Learn how to match ARIA attributes to their roles](https://dequeuniversity.com/rules/axe/4.10/aria-allowed-attr).",
+    "score": 0,
+    "scoreDisplayMode": "binary",
+    "details": {
+      "type": "table",
+      "headings": [
+        {
+          "key": "node",
+          "valueType": "node",
+          "subItemsHeading": {
+            "key": "relatedNode",
+            "valueType": "node"
+          },
+          "label": "Failing Elements"
+        }
+      ],
+      "items": [
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-0-SPAN",
+            "path": "5,HTML,1,BODY,14,DIV,6,DIV,0,DIV,4,SECTION,10,DIV,0,DIV,4,DIV,0,UL,2,LI,0,SPAN",
+            "selector": "div.scrolling-nav > ul.clearfix > li.nav-item > span.dropdown-toggle",
+            "boundingRect": {
+              "top": 267,
+              "bottom": 301,
+              "left": 42,
+              "right": 265,
+              "width": 223,
+              "height": 34
+            },
+            "snippet": "<span class=\"dropdown-toggle nav-link-\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\" aria-haspopup=\"true\">",
+            "nodeLabel": "Enrollment & Registration",
+            "explanation": "Fix all of the following:\n  ARIA attribute is not allowed: aria-expanded=\"false\""
+          }
+        }
+      ],
+      "debugData": {
+        "type": "debugdata",
+        "impact": "critical",
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag412",
+          "EN-301-549",
+          "EN-9.4.1.2"
+        ]
+      }
+    },
+    "errorCount": 1
+  },
+  {
+    "id": "aria-allowed-role",
+    "title": "Uses ARIA roles on incompatible elements",
+    "description": "Many HTML elements can only be assigned certain ARIA roles. Using ARIA roles where they are not allowed can interfere with the accessibility of the web page. [Learn more about ARIA roles](https://dequeuniversity.com/rules/axe/4.10/aria-allowed-role).",
+    "score": 0,
+    "scoreDisplayMode": "binary",
+    "details": {
+      "type": "table",
+      "headings": [
+        {
+          "key": "node",
+          "valueType": "node",
+          "subItemsHeading": {
+            "key": "relatedNode",
+            "valueType": "node"
+          },
+          "label": "Failing Elements"
+        }
+      ],
+      "items": [
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-1-LABEL",
+            "path": "5,HTML,1,BODY,14,DIV,5,HEADER,2,DIV,8,DIV,0,LABEL",
+            "selector": "header#navbar-main > div.navbar-header > div.menu-toggle-wrapper > label",
+            "boundingRect": {
+              "top": 94,
+              "bottom": 110,
+              "left": 372,
+              "right": 392,
+              "width": 20,
+              "height": 16
+            },
+            "snippet": "<label for=\"menu-toggle\" tabindex=\"0\" aria-label=\"Open Menu\" role=\"button\">",
+            "nodeLabel": "Open Menu",
+            "explanation": "Fix any of the following:\n  ARIA role button is not allowed for given element"
+          }
+        }
+      ],
+      "debugData": {
+        "type": "debugdata",
+        "impact": "minor",
+        "tags": [
+          "cat.aria",
+          "best-practice"
+        ]
+      }
+    },
+    "errorCount": 1
+  },
+  {
+    "id": "aria-hidden-focus",
+    "title": "`[aria-hidden=\"true\"]` elements contain focusable descendents",
+    "description": "Focusable descendents within an `[aria-hidden=\"true\"]` element prevent those interactive elements from being available to users of assistive technologies like screen readers. [Learn how `aria-hidden` affects focusable elements](https://dequeuniversity.com/rules/axe/4.10/aria-hidden-focus).",
+    "score": 0,
+    "scoreDisplayMode": "binary",
+    "details": {
+      "type": "table",
+      "headings": [
+        {
+          "key": "node",
+          "valueType": "node",
+          "subItemsHeading": {
+            "key": "relatedNode",
+            "valueType": "node"
+          },
+          "label": "Failing Elements"
+        }
+      ],
+      "items": [
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-2-DIV",
+            "path": "5,HTML,1,BODY,14,DIV,11,SECTION,22,DIV,0,DIV,3,DIV,3,DIV,1,DIV,6,DIV,0,DIV,3,DIV,0,DIV,2,DIV",
+            "selector": "div#slick-1f94a42b84e > div.slick-list > div.slick-track > div.slick__slide",
+            "boundingRect": {
+              "top": 7359,
+              "bottom": 7603,
+              "left": 403,
+              "right": 797,
+              "width": 394,
+              "height": 244
+            },
+            "snippet": "<div class=\"slick__slide slide slide--1 slick-slide\" data-slick-index=\"1\" aria-hidden=\"true\" tabindex=\"-1\" style=\"width: 394px;\" role=\"group\" aria-roledescription=\"slide\">",
+            "nodeLabel": "Thinking About a Health Care Profession? Here’s Where to Start\nJuly 12, 2021",
+            "explanation": "Fix all of the following:\n  Focusable content should have tabindex=\"-1\" or be removed from the DOM"
+          },
+          "subItems": {
+            "type": "subitems",
+            "items": [
+              {
+                "relatedNode": {
+                  "type": "node",
+                  "lhId": "1-3-A",
+                  "path": "5,HTML,1,BODY,14,DIV,11,SECTION,22,DIV,0,DIV,3,DIV,3,DIV,1,DIV,6,DIV,0,DIV,3,DIV,0,DIV,2,DIV,3,DIV,1,DIV,0,DIV,3,DIV,0,SPAN,3,A",
+                  "selector": "div.slide__description > div.views-field > span.field-content > a.news-container",
+                  "boundingRect": {
+                    "top": 7404,
+                    "bottom": 7588,
+                    "left": 418,
+                    "right": 782,
+                    "width": 364,
+                    "height": 184
+                  },
+                  "snippet": "<a href=\"/news/071221/thinking-about-health-care-profession-heres-where-start\" class=\"news-container\" tabindex=\"0\" data-uw-rm-brl=\"PR\" data-uw-original-href=\"https://www.njc.edu/news/071221/thinking-about-health-care-profession-here…\">",
+                  "nodeLabel": "Thinking About a Health Care Profession? Here’s Where to Start\nJuly 12, 2021"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-4-DIV",
+            "path": "5,HTML,1,BODY,14,DIV,11,SECTION,22,DIV,0,DIV,3,DIV,3,DIV,1,DIV,6,DIV,0,DIV,3,DIV,0,DIV,3,DIV",
+            "selector": "div#slick-1f94a42b84e > div.slick-list > div.slick-track > div.slick__slide",
+            "boundingRect": {
+              "top": 7359,
+              "bottom": 7603,
+              "left": 797,
+              "right": 1191,
+              "width": 394,
+              "height": 244
+            },
+            "snippet": "<div class=\"slick__slide slide slide--2 slick-slide\" data-slick-index=\"2\" aria-hidden=\"true\" tabindex=\"-1\" style=\"width: 394px;\" role=\"group\" aria-roledescription=\"slide\">",
+            "nodeLabel": "Northeastern Releases Honor Roll for Spring Semester\nMay 29, 2019",
+            "explanation": "Fix all of the following:\n  Focusable content should have tabindex=\"-1\" or be removed from the DOM"
+          },
+          "subItems": {
+            "type": "subitems",
+            "items": [
+              {
+                "relatedNode": {
+                  "type": "node",
+                  "lhId": "1-5-A",
+                  "path": "5,HTML,1,BODY,14,DIV,11,SECTION,22,DIV,0,DIV,3,DIV,3,DIV,1,DIV,6,DIV,0,DIV,3,DIV,0,DIV,3,DIV,3,DIV,1,DIV,0,DIV,3,DIV,0,SPAN,3,A",
+                  "selector": "div.slide__description > div.views-field > span.field-content > a.news-container",
+                  "boundingRect": {
+                    "top": 7404,
+                    "bottom": 7588,
+                    "left": 812,
+                    "right": 1176,
+                    "width": 364,
+                    "height": 184
+                  },
+                  "snippet": "<a href=\"/news/052919/northeastern-releases-honor-roll-spring-semester\" class=\"news-container\" tabindex=\"0\" data-uw-rm-brl=\"PR\" data-uw-original-href=\"https://www.njc.edu/news/052919/northeastern-releases-honor-roll-spring-se…\">",
+                  "nodeLabel": "Northeastern Releases Honor Roll for Spring Semester\nMay 29, 2019"
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "debugData": {
+        "type": "debugdata",
+        "impact": "serious",
+        "tags": [
+          "cat.name-role-value",
+          "wcag2a",
+          "wcag412",
+          "TTv5",
+          "TT6.a",
+          "EN-301-549",
+          "EN-9.4.1.2"
+        ]
+      }
+    },
+    "errorCount": 2
+  },
+  {
+    "id": "aria-prohibited-attr",
+    "title": "Elements use prohibited ARIA attributes",
+    "description": "Using ARIA attributes in roles where they are prohibited can mean that important information is not communicated to users of assistive technologies. [Learn more about prohibited ARIA roles](https://dequeuniversity.com/rules/axe/4.10/aria-prohibited-attr).",
+    "score": 0,
+    "scoreDisplayMode": "binary",
+    "details": {
+      "type": "table",
+      "headings": [
+        {
+          "key": "node",
+          "valueType": "node",
+          "subItemsHeading": {
+            "key": "relatedNode",
+            "valueType": "node"
+          },
+          "label": "Failing Elements"
+        }
+      ],
+      "items": [
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-6-A",
+            "path": "5,HTML,1,BODY,14,DIV,4,A",
+            "selector": "body.section-organization > div.dialog-off-canvas-main-canvas > a#top",
+            "boundingRect": {
+              "top": 117,
+              "bottom": 117,
+              "left": 0,
+              "right": 0,
+              "width": 0,
+              "height": 0
+            },
+            "snippet": "<a id=\"top\" aria-label=\"Open this option\" data-uw-rm-empty-ctrl=\"\">",
+            "nodeLabel": "Open this option",
+            "explanation": "Fix all of the following:\n  aria-label attribute cannot be used on a a with no valid role attribute."
+          }
+        },
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-7-A",
+            "path": "5,HTML,1,BODY,14,DIV,6,DIV,1,DIV,0,DIV,0,DIV,0,A",
+            "selector": "div.container > div.row > div#content > a#main-content",
+            "boundingRect": {
+              "top": 457,
+              "bottom": 457,
+              "left": 12,
+              "right": 12,
+              "width": 0,
+              "height": 0
+            },
+            "snippet": "<a id=\"main-content\" aria-label=\"Open this option\" data-uw-rm-empty-ctrl=\"\">",
+            "nodeLabel": "Open this option",
+            "explanation": "Fix all of the following:\n  aria-label attribute cannot be used on a a with no valid role attribute."
+          }
+        }
+      ],
+      "debugData": {
+        "type": "debugdata",
+        "impact": "serious",
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag412",
+          "EN-301-549",
+          "EN-9.4.1.2"
+        ]
+      }
+    },
+    "errorCount": 2
+  }
+]

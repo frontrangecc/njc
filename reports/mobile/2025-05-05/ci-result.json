@@ -1,0 +1,1602 @@
+[
+  {
+    "path": "/",
+    "score": 0.77,
+    "performance": 0.52,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.85
+  },
+  {
+    "path": "/about-us",
+    "score": 0.78,
+    "performance": 0.48,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/about-us/accreditation",
+    "score": 0.8,
+    "performance": 0.6,
+    "accessibility": 0.93,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/about-us/college-tour",
+    "score": 0.78,
+    "performance": 0.54,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.85
+  },
+  {
+    "path": "/about-us/mission-vision-philosophy",
+    "score": 0.8,
+    "performance": 0.55,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/about-us/organizational-chart",
+    "score": 0.81,
+    "performance": 0.62,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/about-us/strategic-plan-2021-2025",
+    "score": 0.81,
+    "performance": 0.6,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/academic-calendar",
+    "score": 0.79,
+    "performance": 0.59,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.85
+  },
+  {
+    "path": "/admissions",
+    "score": 0.79,
+    "performance": 0.62,
+    "accessibility": 0.86,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/admissions/admissions-campus-map-directions-campus",
+    "score": 0.77,
+    "performance": 0.61,
+    "accessibility": 0.87,
+    "best-practices": 0.75,
+    "seo": 0.85
+  },
+  {
+    "path": "/admissions/bridge-bachelors-degree-program",
+    "score": 0.76,
+    "performance": 0.51,
+    "accessibility": 0.87,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/admissions/campus-map-directions",
+    "score": 0.73,
+    "performance": 0.46,
+    "accessibility": 0.87,
+    "best-practices": 0.75,
+    "seo": 0.85
+  },
+  {
+    "path": "/admissions/frequently-asked-questions",
+    "score": 0.75,
+    "performance": 0.47,
+    "accessibility": 0.87,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/admissions/general-facts",
+    "score": 0.75,
+    "performance": 0.46,
+    "accessibility": 0.85,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/admissions/how-register-classes",
+    "score": 0.74,
+    "performance": 0.46,
+    "accessibility": 0.84,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/admissions/international-students",
+    "score": 0.77,
+    "performance": 0.54,
+    "accessibility": 0.87,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/admissions/readmission-application",
+    "score": 0.79,
+    "performance": 0.54,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/adult-and-continuing-education-northeastern-junior-college",
+    "score": 0.79,
+    "performance": 0.58,
+    "accessibility": 0.92,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/adult-and-continuing-education-northeastern-junior-college/adult-english-language-instruction-esl",
+    "score": 0.8,
+    "performance": 0.59,
+    "accessibility": 0.93,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/adult-and-continuing-education-northeastern-junior-college/continuing-education",
+    "score": 0.79,
+    "performance": 0.56,
+    "accessibility": 0.92,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/adult-and-continuing-education-northeastern-junior-college/high-school-equivalency-ged-preparation",
+    "score": 0.78,
+    "performance": 0.57,
+    "accessibility": 0.9,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/adult-and-continuing-education-northeastern-junior-college/industry-training-courses",
+    "score": 0.77,
+    "performance": 0.57,
+    "accessibility": 0.89,
+    "best-practices": 0.75,
+    "seo": 0.85
+  },
+  {
+    "path": "/adult-and-continuing-education-northeastern-junior-college/skill-advance-colorado",
+    "score": 0.8,
+    "performance": 0.62,
+    "accessibility": 0.89,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/advisory-council",
+    "score": 0.74,
+    "performance": 0.58,
+    "accessibility": 0.87,
+    "best-practices": 0.75,
+    "seo": 0.77
+  },
+  {
+    "path": "/advisory-council/advisory-council-minutes-thursday-april-10-2025",
+    "score": 0.77,
+    "performance": 0.57,
+    "accessibility": 0.92,
+    "best-practices": 0.75,
+    "seo": 0.85
+  },
+  {
+    "path": "/advisory-council/upcoming-advisory-council-agenda",
+    "score": 0.8,
+    "performance": 0.59,
+    "accessibility": 0.92,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/alumni-association",
+    "score": 0.78,
+    "performance": 0.52,
+    "accessibility": 0.92,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/alumni-association/heritage-center",
+    "score": 0.77,
+    "performance": 0.47,
+    "accessibility": 0.92,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/alumni-association/njc-alumni-sponsorships",
+    "score": 0.78,
+    "performance": 0.52,
+    "accessibility": 0.92,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/alumni/alumni-membership",
+    "score": 0.79,
+    "performance": 0.57,
+    "accessibility": 0.93,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/apply-housing",
+    "score": 0.77,
+    "performance": 0.56,
+    "accessibility": 0.84,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/areas-of-interest",
+    "score": 0.78,
+    "performance": 0.56,
+    "accessibility": 0.95,
+    "best-practices": 0.75,
+    "seo": 0.85
+  },
+  {
+    "path": "/assessment",
+    "score": 0.81,
+    "performance": 0.62,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/assessment/accreditation",
+    "score": 0.78,
+    "performance": 0.54,
+    "accessibility": 0.92,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/assessment/assessment-data",
+    "score": 0.79,
+    "performance": 0.54,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/assessment/co-curricular-assessment",
+    "score": 0.79,
+    "performance": 0.52,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/assessment/faculty-assessment-resources",
+    "score": 0.78,
+    "performance": 0.53,
+    "accessibility": 0.92,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/assessment/faculty-assessment-resources/assessment-faqs",
+    "score": 0.79,
+    "performance": 0.52,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/assessment/institutional-student-learning-outcomes",
+    "score": 0.78,
+    "performance": 0.54,
+    "accessibility": 0.96,
+    "best-practices": 0.71,
+    "seo": 0.92
+  },
+  {
+    "path": "/bank-colorado-event-center",
+    "score": 0.8,
+    "performance": 0.57,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/bank-colorado-event-center/facility-details",
+    "score": 0.79,
+    "performance": 0.54,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/bank-colorado-event-center/fitness-center",
+    "score": 0.81,
+    "performance": 0.62,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/bank-colorado-event-center/jackson-edwards-arena",
+    "score": 0.8,
+    "performance": 0.56,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/bank-colorado-event-center/membership-rates",
+    "score": 0.81,
+    "performance": 0.6,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/bookstore",
+    "score": 0.8,
+    "performance": 0.57,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/bookstore/course-materials",
+    "score": 0.8,
+    "performance": 0.57,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/bookstore/frequently-asked-questions",
+    "score": 0.79,
+    "performance": 0.58,
+    "accessibility": 0.92,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/bookstore/store-information",
+    "score": 0.8,
+    "performance": 0.57,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/boxd-chef",
+    "score": 0.77,
+    "performance": 0.53,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.85
+  },
+  {
+    "path": "/cafeteria",
+    "score": 0.78,
+    "performance": 0.58,
+    "accessibility": 0.92,
+    "best-practices": 0.75,
+    "seo": 0.85
+  },
+  {
+    "path": "/calendar",
+    "score": 0.78,
+    "performance": 0.59,
+    "accessibility": 0.92,
+    "best-practices": 0.75,
+    "seo": 0.85
+  },
+  {
+    "path": "/calendar/day",
+    "score": 0.74,
+    "performance": 0.42,
+    "accessibility": 0.92,
+    "best-practices": 0.75,
+    "seo": 0.85
+  },
+  {
+    "path": "/calendar/event/051225/last-day-classes-daytime-classes",
+    "score": 0.73,
+    "performance": 0.41,
+    "accessibility": 0.92,
+    "best-practices": 0.75,
+    "seo": 0.85
+  },
+  {
+    "path": "/calendar/event/051325/final-exams-day-classes",
+    "score": 0.74,
+    "performance": 0.42,
+    "accessibility": 0.92,
+    "best-practices": 0.75,
+    "seo": 0.85
+  },
+  {
+    "path": "/calendar/event/051525/honors-banquet",
+    "score": 0.79,
+    "performance": 0.57,
+    "accessibility": 0.92,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/calendar/event/051625/cafeteria-closes-after-breakfast-lunch-served-petes-retreat",
+    "score": 0.78,
+    "performance": 0.58,
+    "accessibility": 0.92,
+    "best-practices": 0.75,
+    "seo": 0.85
+  },
+  {
+    "path": "/calendar/event/051625/commencement-exercises-bank-colorado-event-center-1000-am-200-pm",
+    "score": 0.78,
+    "performance": 0.58,
+    "accessibility": 0.92,
+    "best-practices": 0.75,
+    "seo": 0.85
+  },
+  {
+    "path": "/calendar/event/051625/move-out-day-residence-halls-close-600-pm",
+    "score": 0.73,
+    "performance": 0.41,
+    "accessibility": 0.92,
+    "best-practices": 0.75,
+    "seo": 0.85
+  },
+  {
+    "path": "/calendar/event/051925/final-grades-due-noon",
+    "score": 0.74,
+    "performance": 0.42,
+    "accessibility": 0.92,
+    "best-practices": 0.75,
+    "seo": 0.85
+  },
+  {
+    "path": "/calendar/event/051925/intercession-term-classes-begin",
+    "score": 0.73,
+    "performance": 0.41,
+    "accessibility": 0.92,
+    "best-practices": 0.75,
+    "seo": 0.85
+  },
+  {
+    "path": "/calendar/event/051925/move-day-intercession-term-residents-only-1200-pm-300-pm",
+    "score": 0.77,
+    "performance": 0.57,
+    "accessibility": 0.92,
+    "best-practices": 0.75,
+    "seo": 0.85
+  },
+  {
+    "path": "/calendar/event/052025/last-day-add-intercession-term-classes",
+    "score": 0.78,
+    "performance": 0.6,
+    "accessibility": 0.92,
+    "best-practices": 0.75,
+    "seo": 0.85
+  },
+  {
+    "path": "/calendar/event/052025/last-day-drop-intercession-classes-receive-refund-census-date",
+    "score": 0.77,
+    "performance": 0.54,
+    "accessibility": 0.92,
+    "best-practices": 0.75,
+    "seo": 0.85
+  },
+  {
+    "path": "/calendar/event/052025/no-show-deadline",
+    "score": 0.73,
+    "performance": 0.41,
+    "accessibility": 0.92,
+    "best-practices": 0.75,
+    "seo": 0.85
+  },
+  {
+    "path": "/calendar/event/052625/memorial-day-no-classes",
+    "score": 0.73,
+    "performance": 0.41,
+    "accessibility": 0.92,
+    "best-practices": 0.75,
+    "seo": 0.85
+  },
+  {
+    "path": "/calendar/event/052725/10-week-summer-session",
+    "score": 0.74,
+    "performance": 0.42,
+    "accessibility": 0.92,
+    "best-practices": 0.75,
+    "seo": 0.85
+  },
+  {
+    "path": "/calendar/event/052725/5-week-summer-session",
+    "score": 0.78,
+    "performance": 0.6,
+    "accessibility": 0.92,
+    "best-practices": 0.75,
+    "seo": 0.85
+  },
+  {
+    "path": "/calendar/event/052825/last-day-withdraw-intercession-classes-w-grade",
+    "score": 0.78,
+    "performance": 0.58,
+    "accessibility": 0.92,
+    "best-practices": 0.75,
+    "seo": 0.85
+  },
+  {
+    "path": "/calendar/event/053025/last-day-intercession-term-classes",
+    "score": 0.73,
+    "performance": 0.41,
+    "accessibility": 0.92,
+    "best-practices": 0.75,
+    "seo": 0.85
+  },
+  {
+    "path": "/calendar/month/202504?type=All",
+    "score": 0.77,
+    "performance": 0.56,
+    "accessibility": 0.92,
+    "best-practices": 0.75,
+    "seo": 0.85
+  },
+  {
+    "path": "/calendar/month/202506?type=All",
+    "score": 0.78,
+    "performance": 0.58,
+    "accessibility": 0.92,
+    "best-practices": 0.75,
+    "seo": 0.85
+  },
+  {
+    "path": "/calendar/type/304",
+    "score": 0.78,
+    "performance": 0.59,
+    "accessibility": 0.92,
+    "best-practices": 0.75,
+    "seo": 0.85
+  },
+  {
+    "path": "/calendar/type/305",
+    "score": 0.78,
+    "performance": 0.58,
+    "accessibility": 0.92,
+    "best-practices": 0.75,
+    "seo": 0.85
+  },
+  {
+    "path": "/calendar/type/382",
+    "score": 0.78,
+    "performance": 0.59,
+    "accessibility": 0.92,
+    "best-practices": 0.75,
+    "seo": 0.85
+  },
+  {
+    "path": "/calendar/type/383",
+    "score": 0.78,
+    "performance": 0.58,
+    "accessibility": 0.92,
+    "best-practices": 0.75,
+    "seo": 0.85
+  },
+  {
+    "path": "/calendar/type/384",
+    "score": 0.78,
+    "performance": 0.58,
+    "accessibility": 0.92,
+    "best-practices": 0.75,
+    "seo": 0.85
+  },
+  {
+    "path": "/cashier",
+    "score": 0.77,
+    "performance": 0.49,
+    "accessibility": 0.92,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/cashier/additional-costs",
+    "score": 0.78,
+    "performance": 0.51,
+    "accessibility": 0.92,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/cashier/payment-plan",
+    "score": 0.79,
+    "performance": 0.57,
+    "accessibility": 0.92,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/cashier/refunds",
+    "score": 0.79,
+    "performance": 0.57,
+    "accessibility": 0.92,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/cashier/room-and-board-rates",
+    "score": 0.78,
+    "performance": 0.5,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/cashier/tuition-and-fees",
+    "score": 0.79,
+    "performance": 0.58,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.85
+  },
+  {
+    "path": "/cashier/tuition-and-fees/tuition-costs",
+    "score": 0.77,
+    "performance": 0.47,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/colorado-initiatives",
+    "score": 0.79,
+    "performance": 0.54,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/colorado-initiatives/care-forward-colorado",
+    "score": 0.78,
+    "performance": 0.58,
+    "accessibility": 0.92,
+    "best-practices": 0.75,
+    "seo": 0.85
+  },
+  {
+    "path": "/concurrent-enrollment",
+    "score": 0.8,
+    "performance": 0.58,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/concurrent-enrollment/cof",
+    "score": 0.81,
+    "performance": 0.6,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/concurrent-enrollment/parents",
+    "score": 0.8,
+    "performance": 0.59,
+    "accessibility": 0.92,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/concurrent-enrollment/students",
+    "score": 0.8,
+    "performance": 0.58,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/course-schedules-transcripts-and-resources",
+    "score": 0.81,
+    "performance": 0.6,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/cpr-classes",
+    "score": 0.77,
+    "performance": 0.55,
+    "accessibility": 0.92,
+    "best-practices": 0.75,
+    "seo": 0.85
+  },
+  {
+    "path": "/directory",
+    "score": 0.78,
+    "performance": 0.58,
+    "accessibility": 0.96,
+    "best-practices": 0.71,
+    "seo": 0.85
+  },
+  {
+    "path": "/elearning",
+    "score": 0.79,
+    "performance": 0.56,
+    "accessibility": 0.92,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/esports",
+    "score": 0.79,
+    "performance": 0.57,
+    "accessibility": 0.92,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/facilities-use",
+    "score": 0.81,
+    "performance": 0.6,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/financial-aid-assistance",
+    "score": 0.77,
+    "performance": 0.48,
+    "accessibility": 0.91,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/future-students",
+    "score": 0.81,
+    "performance": 0.59,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/grant-development",
+    "score": 0.81,
+    "performance": 0.59,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/group-visit",
+    "score": 0.77,
+    "performance": 0.59,
+    "accessibility": 0.84,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/honors-program",
+    "score": 0.8,
+    "performance": 0.6,
+    "accessibility": 0.92,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/human-resources",
+    "score": 0.77,
+    "performance": 0.47,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/human-resources/jobs-northeastern",
+    "score": 0.79,
+    "performance": 0.52,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/human-resources/title-ix",
+    "score": 0.79,
+    "performance": 0.58,
+    "accessibility": 0.92,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/individual-visit",
+    "score": 0.78,
+    "performance": 0.62,
+    "accessibility": 0.83,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/institutional-research",
+    "score": 0.72,
+    "performance": 0.41,
+    "accessibility": 0.87,
+    "best-practices": 0.75,
+    "seo": 0.85
+  },
+  {
+    "path": "/institutional-research/ir-reports/equity-athletics",
+    "score": 0.76,
+    "performance": 0.44,
+    "accessibility": 0.91,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/institutional-research/northeastern-reports/common-data-set",
+    "score": 0.76,
+    "performance": 0.43,
+    "accessibility": 0.92,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/international-students",
+    "score": 0.77,
+    "performance": 0.51,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.85
+  },
+  {
+    "path": "/it",
+    "score": 0.76,
+    "performance": 0.46,
+    "accessibility": 0.92,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/livestock-judging",
+    "score": 0.78,
+    "performance": 0.51,
+    "accessibility": 0.92,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/living-on-campus",
+    "score": 0.79,
+    "performance": 0.61,
+    "accessibility": 0.95,
+    "best-practices": 0.75,
+    "seo": 0.85
+  },
+  {
+    "path": "/locations",
+    "score": 0.79,
+    "performance": 0.6,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.85
+  },
+  {
+    "path": "/marketing-and-communications",
+    "score": 0.81,
+    "performance": 0.59,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/mlc",
+    "score": 0.79,
+    "performance": 0.58,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.85
+  },
+  {
+    "path": "/news",
+    "score": 0.78,
+    "performance": 0.57,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.85
+  },
+  {
+    "path": "/news/010625/northeastern-releases-honor-roll-fall-2024-semester",
+    "score": 0.81,
+    "performance": 0.61,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/news/011420/leaving-lasting-legacy-farmranch-estate-and-succession-planning-seminar-northeastern",
+    "score": 0.81,
+    "performance": 0.6,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/news/021818/northeastern-junior-college-alumni-honor-outstanding-former-instructors",
+    "score": 0.79,
+    "performance": 0.6,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.85
+  },
+  {
+    "path": "/news/021820/seven-northeastern-alumni-honored-personal-and-professional-achievements-graduation",
+    "score": 0.8,
+    "performance": 0.57,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/news/022023/northeastern-junior-college-honors-outstanding-alumni-and-supporters",
+    "score": 0.8,
+    "performance": 0.58,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/news/022222/njc-alumni-association-honors-don-brown-pathfinder-award",
+    "score": 0.81,
+    "performance": 0.59,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/news/022222/northeastern-junior-college-honors-outstanding-alumi-supporters",
+    "score": 0.8,
+    "performance": 0.58,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/news/022422/njc-alumni-association-honors-dr-bruce-perryman-chip-steger-presidents-award",
+    "score": 0.8,
+    "performance": 0.58,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/news/022822/wellington-and-wilma-webb-present-20000-donation-njc-foundation",
+    "score": 0.8,
+    "performance": 0.57,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/news/041521/no-name-change-northeastern-junior-college",
+    "score": 0.8,
+    "performance": 0.55,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/news/041621/njc-students-honored-academic-excellence-and-exemplary-leadership",
+    "score": 0.81,
+    "performance": 0.6,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/news/041725/njc-student-leaders-recognized-cccs-awards-banquet",
+    "score": 0.81,
+    "performance": 0.62,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/news/041725/outstanding-northeastern-junior-college-faculty-staff-recognized",
+    "score": 0.8,
+    "performance": 0.58,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/news/042221/mr-njc-jack-annan-has-passed-away-funeral-arrangements-are-pending",
+    "score": 0.81,
+    "performance": 0.59,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/news/042222/njc-student-art-show-runs-april-25-may-6",
+    "score": 0.8,
+    "performance": 0.57,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/news/042321/northeastern-junior-college-president-jay-lee-announces-plan-retirement",
+    "score": 0.81,
+    "performance": 0.62,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/news/042423/northeastern-junior-colleges-enrollment-still-down-showing-some-improvement",
+    "score": 0.81,
+    "performance": 0.62,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/news/050621/local-highway-be-renamed-honoring-late-jack-mr-njc-annan",
+    "score": 0.81,
+    "performance": 0.62,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/news/050622/northeastern-junior-college-recognizes-six-dedicated-retirees",
+    "score": 0.8,
+    "performance": 0.58,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/news/051022/rest-peace",
+    "score": 0.8,
+    "performance": 0.58,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/news/051523/njc-centennial-mental-health-move-forward-new-student-ids",
+    "score": 0.81,
+    "performance": 0.6,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/news/051623/352-northeastern-junior-college-graduates-mark-significant-milestone",
+    "score": 0.8,
+    "performance": 0.57,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/news/051821/375-njc-graduates-succeeded-despite-challenging-year",
+    "score": 0.81,
+    "performance": 0.6,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/news/052419/northeastern-takes-top-honors-daniels-fund-ethics-contest",
+    "score": 0.8,
+    "performance": 0.63,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.85
+  },
+  {
+    "path": "/news/052919/northeastern-releases-honor-roll-spring-semester",
+    "score": 0.8,
+    "performance": 0.57,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/news/060921/northeastern-junior-college-honors-5-ged-commencement-ceremony",
+    "score": 0.81,
+    "performance": 0.62,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/news/062724/northeastern-releases-honor-roll-spring-2024-semester",
+    "score": 0.81,
+    "performance": 0.6,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/news/070319/northeastern-launches-new-scholarship-fund-children-njc-alumni",
+    "score": 0.81,
+    "performance": 0.62,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/news/071219/northeastern-confers-diplomas-seven-ged-recipients",
+    "score": 0.81,
+    "performance": 0.6,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/news/071221/thinking-about-health-care-profession-heres-where-start",
+    "score": 0.8,
+    "performance": 0.62,
+    "accessibility": 0.92,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/news/071521/northeastern-junior-college-announces-new-rise-grant-project-team",
+    "score": 0.8,
+    "performance": 0.57,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/news/081919/northeastern-kicks-capital-campaign-atc-expansion",
+    "score": 0.8,
+    "performance": 0.57,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/news/082619/miniature-art-trading-cards-exhibit-opens",
+    "score": 0.81,
+    "performance": 0.61,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/news/091019/njc-regional-art-show-slated-sept-23-through-oct-9-2019",
+    "score": 0.79,
+    "performance": 0.58,
+    "accessibility": 0.92,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/news/092322/northeastern-junior-college-sterling-correctional-facility-partner-heritage-month",
+    "score": 0.8,
+    "performance": 0.57,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/news/100724/northeastern-junior-college-scholarship-recipients-thank-donors-appreciation-breakfast",
+    "score": 0.81,
+    "performance": 0.59,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/news/102218/njc-heritage-center-offering-additional-touring-hours-during-fall-semester",
+    "score": 0.81,
+    "performance": 0.59,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/news/102524/sen-pelton-hosts-bha-launch-accelerated-masters-program-addiction-counseling-njc",
+    "score": 0.81,
+    "performance": 0.59,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/news/111423/northeastern-junior-college-recognizes-outgoing-advisory-council-members",
+    "score": 0.8,
+    "performance": 0.57,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/news/111822/new-fema-flood-plain-maps-lead-delay-northeastern-junior-colleges-atc-expansion-project",
+    "score": 0.81,
+    "performance": 0.6,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/news/112222/njcs-adult-and-community-education-program-seeing-success",
+    "score": 0.8,
+    "performance": 0.57,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/news/121021/vice-president-student-services-steve-smith-named-interim-president-northeastern-junior",
+    "score": 0.8,
+    "performance": 0.58,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/node/147",
+    "score": 0.8,
+    "performance": 0.62,
+    "accessibility": 0.92,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/node/1845",
+    "score": 0.78,
+    "performance": 0.62,
+    "accessibility": 0.84,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/node/2027",
+    "score": 0.79,
+    "performance": 0.61,
+    "accessibility": 0.87,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/node/2595",
+    "score": 0.8,
+    "performance": 0.57,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/node/4733",
+    "score": 0.78,
+    "performance": 0.59,
+    "accessibility": 0.87,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/node/6874",
+    "score": 0.74,
+    "performance": 0.44,
+    "accessibility": 0.93,
+    "best-practices": 0.75,
+    "seo": 0.85
+  },
+  {
+    "path": "/northeastern-junior-college-foundation",
+    "score": 0.79,
+    "performance": 0.56,
+    "accessibility": 0.92,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/northeastern-preview",
+    "score": 0.76,
+    "performance": 0.49,
+    "accessibility": 0.87,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/novel-coronavirus-covid-19",
+    "score": 0.8,
+    "performance": 0.59,
+    "accessibility": 0.92,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/open-educational-resources",
+    "score": 0.8,
+    "performance": 0.58,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/privacy-policy",
+    "score": 0.79,
+    "performance": 0.55,
+    "accessibility": 0.92,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/profile/student/brenden-gunwall",
+    "score": 0.78,
+    "performance": 0.54,
+    "accessibility": 0.92,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/profile/student/david-lock",
+    "score": 0.79,
+    "performance": 0.56,
+    "accessibility": 0.92,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/profile/student/dylan-cranwell",
+    "score": 0.79,
+    "performance": 0.56,
+    "accessibility": 0.92,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/profile/student/elliott-cotton-england",
+    "score": 0.8,
+    "performance": 0.59,
+    "accessibility": 0.92,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/profile/student/forrest-quinn-tappy",
+    "score": 0.79,
+    "performance": 0.57,
+    "accessibility": 0.92,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/profile/student/kelli-carlson",
+    "score": 0.79,
+    "performance": 0.58,
+    "accessibility": 0.92,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/profile/student/mar-danes-spain",
+    "score": 0.8,
+    "performance": 0.6,
+    "accessibility": 0.92,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/profile/student/michael-chavez",
+    "score": 0.8,
+    "performance": 0.59,
+    "accessibility": 0.92,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/ranch-horse-versatility",
+    "score": 0.8,
+    "performance": 0.59,
+    "accessibility": 0.92,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/records",
+    "score": 0.8,
+    "performance": 0.6,
+    "accessibility": 0.91,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/records/transcript-requests",
+    "score": 0.78,
+    "performance": 0.59,
+    "accessibility": 0.88,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/registration",
+    "score": 0.75,
+    "performance": 0.46,
+    "accessibility": 0.87,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/request-information",
+    "score": 0.79,
+    "performance": 0.6,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.85
+  },
+  {
+    "path": "/residence-life",
+    "score": 0.77,
+    "performance": 0.54,
+    "accessibility": 0.87,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/residence-life/room-and-board-rates",
+    "score": 0.78,
+    "performance": 0.59,
+    "accessibility": 0.91,
+    "best-practices": 0.75,
+    "seo": 0.85
+  },
+  {
+    "path": "/residence-life/summer-event-housing-information",
+    "score": 0.78,
+    "performance": 0.61,
+    "accessibility": 0.84,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/rodeo",
+    "score": 0.78,
+    "performance": 0.62,
+    "accessibility": 0.88,
+    "best-practices": 0.75,
+    "seo": 0.85
+  },
+  {
+    "path": "/rural-colorado-career-expo",
+    "score": 0.79,
+    "performance": 0.58,
+    "accessibility": 0.92,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/safety-and-security",
+    "score": 0.8,
+    "performance": 0.55,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/scholarships",
+    "score": 0.79,
+    "performance": 0.6,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.85
+  },
+  {
+    "path": "/search",
+    "score": 0.79,
+    "performance": 0.59,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.85
+  },
+  {
+    "path": "/student-activities",
+    "score": 0.78,
+    "performance": 0.57,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.85
+  },
+  {
+    "path": "/student-ambassador-application",
+    "score": 0.79,
+    "performance": 0.61,
+    "accessibility": 0.87,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/student-ambassador-team",
+    "score": 0.74,
+    "performance": 0.5,
+    "accessibility": 0.87,
+    "best-practices": 0.75,
+    "seo": 0.85
+  },
+  {
+    "path": "/student-government",
+    "score": 0.78,
+    "performance": 0.52,
+    "accessibility": 0.92,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/student-success-center",
+    "score": 0.75,
+    "performance": 0.47,
+    "accessibility": 0.84,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/Studentorgs",
+    "score": 0.77,
+    "performance": 0.5,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.85
+  },
+  {
+    "path": "/submit-event",
+    "score": 0.8,
+    "performance": 0.6,
+    "accessibility": 0.93,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/tuition-costs-2023-2024",
+    "score": 0.8,
+    "performance": 0.58,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/visit-campus",
+    "score": 0.75,
+    "performance": 0.47,
+    "accessibility": 0.87,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/what-bring",
+    "score": 0.78,
+    "performance": 0.58,
+    "accessibility": 0.87,
+    "best-practices": 0.75,
+    "seo": 0.92
+  },
+  {
+    "path": "/yuma-campus",
+    "score": 0.77,
+    "performance": 0.53,
+    "accessibility": 0.96,
+    "best-practices": 0.75,
+    "seo": 0.85
+  }
+]

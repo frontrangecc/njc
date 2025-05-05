@@ -1,0 +1,464 @@
+[
+  {
+    "id": "aria-allowed-attr",
+    "title": "`[aria-*]` attributes do not match their roles",
+    "description": "Each ARIA `role` supports a specific subset of `aria-*` attributes. Mismatching these invalidates the `aria-*` attributes. [Learn how to match ARIA attributes to their roles](https://dequeuniversity.com/rules/axe/4.10/aria-allowed-attr).",
+    "score": 0,
+    "scoreDisplayMode": "binary",
+    "details": {
+      "type": "table",
+      "headings": [
+        {
+          "key": "node",
+          "valueType": "node",
+          "subItemsHeading": {
+            "key": "relatedNode",
+            "valueType": "node"
+          },
+          "label": "Failing Elements"
+        }
+      ],
+      "items": [
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-0-SPAN",
+            "path": "5,HTML,1,BODY,14,DIV,6,DIV,0,DIV,4,SECTION,10,DIV,0,DIV,4,DIV,0,UL,1,LI,0,SPAN",
+            "selector": "div.scrolling-nav > ul.clearfix > li.nav-item > span.dropdown-toggle",
+            "boundingRect": {
+              "top": 233,
+              "bottom": 267,
+              "left": 68,
+              "right": 190,
+              "width": 122,
+              "height": 34
+            },
+            "snippet": "<span target=\"_self\" class=\"dropdown-toggle nav-link-\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\" aria-haspopup=\"true\">",
+            "nodeLabel": "Orientation",
+            "explanation": "Fix all of the following:\n  ARIA attribute is not allowed: aria-expanded=\"false\""
+          }
+        }
+      ],
+      "debugData": {
+        "type": "debugdata",
+        "impact": "critical",
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag412",
+          "EN-301-549",
+          "EN-9.4.1.2"
+        ]
+      }
+    },
+    "errorCount": 1
+  },
+  {
+    "id": "aria-allowed-role",
+    "title": "Uses ARIA roles on incompatible elements",
+    "description": "Many HTML elements can only be assigned certain ARIA roles. Using ARIA roles where they are not allowed can interfere with the accessibility of the web page. [Learn more about ARIA roles](https://dequeuniversity.com/rules/axe/4.10/aria-allowed-role).",
+    "score": 0,
+    "scoreDisplayMode": "binary",
+    "details": {
+      "type": "table",
+      "headings": [
+        {
+          "key": "node",
+          "valueType": "node",
+          "subItemsHeading": {
+            "key": "relatedNode",
+            "valueType": "node"
+          },
+          "label": "Failing Elements"
+        }
+      ],
+      "items": [
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-1-LABEL",
+            "path": "5,HTML,1,BODY,14,DIV,5,HEADER,2,DIV,8,DIV,0,LABEL",
+            "selector": "header#navbar-main > div.navbar-header > div.menu-toggle-wrapper > label",
+            "boundingRect": {
+              "top": 94,
+              "bottom": 110,
+              "left": 372,
+              "right": 392,
+              "width": 20,
+              "height": 16
+            },
+            "snippet": "<label for=\"menu-toggle\" tabindex=\"0\" aria-label=\"Open Menu\" role=\"button\">",
+            "nodeLabel": "Open Menu",
+            "explanation": "Fix any of the following:\n  ARIA role button is not allowed for given element"
+          }
+        }
+      ],
+      "debugData": {
+        "type": "debugdata",
+        "impact": "minor",
+        "tags": [
+          "cat.aria",
+          "best-practice"
+        ]
+      }
+    },
+    "errorCount": 1
+  },
+  {
+    "id": "aria-hidden-focus",
+    "title": "`[aria-hidden=\"true\"]` elements contain focusable descendents",
+    "description": "Focusable descendents within an `[aria-hidden=\"true\"]` element prevent those interactive elements from being available to users of assistive technologies like screen readers. [Learn how `aria-hidden` affects focusable elements](https://dequeuniversity.com/rules/axe/4.10/aria-hidden-focus).",
+    "score": 0,
+    "scoreDisplayMode": "binary",
+    "details": {
+      "type": "table",
+      "headings": [
+        {
+          "key": "node",
+          "valueType": "node",
+          "subItemsHeading": {
+            "key": "relatedNode",
+            "valueType": "node"
+          },
+          "label": "Failing Elements"
+        }
+      ],
+      "items": [
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-2-DIV",
+            "path": "5,HTML,1,BODY,14,DIV,11,SECTION,22,DIV,0,DIV,3,DIV,3,DIV,1,DIV,6,DIV,0,DIV,3,DIV,0,DIV,0,DIV",
+            "selector": "div#slick-1f94a42b84e > div.slick-list > div.slick-track > div.slick__slide",
+            "boundingRect": {
+              "top": 7064,
+              "bottom": 7308,
+              "left": -385,
+              "right": 9,
+              "width": 394,
+              "height": 244
+            },
+            "snippet": "<div class=\"slick__slide slide slide--1 slick-slide slick-cloned\" data-slick-index=\"-1\" id=\"\" aria-hidden=\"true\" tabindex=\"-1\" style=\"width: 394px;\" role=\"group\" aria-roledescription=\"slide\">",
+            "nodeLabel": "TalkCampus - Protecting Your Mental Health from Negative News\nMarch 31, 2022",
+            "explanation": "Fix all of the following:\n  Focusable content should have tabindex=\"-1\" or be removed from the DOM"
+          },
+          "subItems": {
+            "type": "subitems",
+            "items": [
+              {
+                "relatedNode": {
+                  "type": "node",
+                  "lhId": "1-3-A",
+                  "path": "5,HTML,1,BODY,14,DIV,11,SECTION,22,DIV,0,DIV,3,DIV,3,DIV,1,DIV,6,DIV,0,DIV,3,DIV,0,DIV,0,DIV,3,DIV,1,DIV,0,DIV,3,DIV,0,SPAN,3,A",
+                  "selector": "div.slide__description > div.views-field > span.field-content > a.news-container",
+                  "boundingRect": {
+                    "top": 7109,
+                    "bottom": 7293,
+                    "left": -370,
+                    "right": -6,
+                    "width": 364,
+                    "height": 184
+                  },
+                  "snippet": "<a href=\"/news/033122/talkcampus-protecting-your-mental-health-negative-news\" class=\"news-container\" tabindex=\"0\" data-uw-rm-brl=\"PR\" data-uw-original-href=\"https://www.njc.edu/news/033122/talkcampus-protecting-your-mental-health-n…\">",
+                  "nodeLabel": "TalkCampus - Protecting Your Mental Health from Negative News\nMarch 31, 2022"
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "debugData": {
+        "type": "debugdata",
+        "impact": "serious",
+        "tags": [
+          "cat.name-role-value",
+          "wcag2a",
+          "wcag412",
+          "TTv5",
+          "TT6.a",
+          "EN-301-549",
+          "EN-9.4.1.2"
+        ]
+      }
+    },
+    "errorCount": 1
+  },
+  {
+    "id": "aria-prohibited-attr",
+    "title": "Elements use prohibited ARIA attributes",
+    "description": "Using ARIA attributes in roles where they are prohibited can mean that important information is not communicated to users of assistive technologies. [Learn more about prohibited ARIA roles](https://dequeuniversity.com/rules/axe/4.10/aria-prohibited-attr).",
+    "score": 0,
+    "scoreDisplayMode": "binary",
+    "details": {
+      "type": "table",
+      "headings": [
+        {
+          "key": "node",
+          "valueType": "node",
+          "subItemsHeading": {
+            "key": "relatedNode",
+            "valueType": "node"
+          },
+          "label": "Failing Elements"
+        }
+      ],
+      "items": [
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-4-A",
+            "path": "5,HTML,1,BODY,14,DIV,4,A",
+            "selector": "body.section-organization > div.dialog-off-canvas-main-canvas > a#top",
+            "boundingRect": {
+              "top": 117,
+              "bottom": 117,
+              "left": 0,
+              "right": 0,
+              "width": 0,
+              "height": 0
+            },
+            "snippet": "<a id=\"top\" aria-label=\"Open this option\" data-uw-rm-empty-ctrl=\"\">",
+            "nodeLabel": "Open this option",
+            "explanation": "Fix all of the following:\n  aria-label attribute cannot be used on a a with no valid role attribute."
+          }
+        },
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-5-A",
+            "path": "5,HTML,1,BODY,14,DIV,6,DIV,1,DIV,0,DIV,0,DIV,0,A",
+            "selector": "div.container > div.row > div#content > a#main-content",
+            "boundingRect": {
+              "top": 389,
+              "bottom": 389,
+              "left": 12,
+              "right": 12,
+              "width": 0,
+              "height": 0
+            },
+            "snippet": "<a id=\"main-content\" aria-label=\"Open this option\" data-uw-rm-empty-ctrl=\"\">",
+            "nodeLabel": "Open this option",
+            "explanation": "Fix all of the following:\n  aria-label attribute cannot be used on a a with no valid role attribute."
+          }
+        }
+      ],
+      "debugData": {
+        "type": "debugdata",
+        "impact": "serious",
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag412",
+          "EN-301-549",
+          "EN-9.4.1.2"
+        ]
+      }
+    },
+    "errorCount": 2
+  },
+  {
+    "id": "link-in-text-block",
+    "title": "Links rely on color to be distinguishable.",
+    "description": "Low-contrast text is difficult or impossible for many users to read. Link text that is discernible improves the experience for users with low vision. [Learn how to make links distinguishable](https://dequeuniversity.com/rules/axe/4.10/link-in-text-block).",
+    "score": 0,
+    "scoreDisplayMode": "binary",
+    "details": {
+      "type": "table",
+      "headings": [
+        {
+          "key": "node",
+          "valueType": "node",
+          "subItemsHeading": {
+            "key": "relatedNode",
+            "valueType": "node"
+          },
+          "label": "Failing Elements"
+        }
+      ],
+      "items": [
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-6-A",
+            "path": "5,HTML,1,BODY,14,DIV,6,DIV,1,DIV,0,DIV,0,DIV,5,SECTION,10,DIV,0,DIV,7,DIV,10,DIV,10,P,1,A",
+            "selector": "div.display-body > div.clearfix > p > a",
+            "boundingRect": {
+              "top": 2019,
+              "bottom": 2038,
+              "left": 43,
+              "right": 198,
+              "width": 155,
+              "height": 19
+            },
+            "snippet": "<a href=\"http://www.act.org/content/act/en/products-and-services/the-act.html\" target=\"_blank\" data-uw-rm-brl=\"PR\" data-uw-original-href=\"http://www.act.org/content/act/en/products-and-services/the-act.html\" aria-label=\"National Test Dates - open in a new tab\" data-uw-rm-ext-link=\"\" uw-rm-external-link-id=\"http://www.act.org/content/act/en/products-and-services/the-act.html$natio…\">",
+            "nodeLabel": "National Test Dates",
+            "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 2.85:1 with the surrounding text. (Minimum contrast is 3:1, link text: #4d2de8, surrounding text: #000000)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+          },
+          "subItems": {
+            "type": "subitems",
+            "items": [
+              {
+                "relatedNode": {
+                  "type": "node",
+                  "lhId": "1-7-P",
+                  "path": "5,HTML,1,BODY,14,DIV,6,DIV,1,DIV,0,DIV,0,DIV,5,SECTION,10,DIV,0,DIV,7,DIV,10,DIV,10,P",
+                  "selector": "div.block-inner > div.display-body > div.clearfix > p",
+                  "boundingRect": {
+                    "top": 1914,
+                    "bottom": 2042,
+                    "left": 12,
+                    "right": 400,
+                    "width": 388,
+                    "height": 128
+                  },
+                  "snippet": "<p>",
+                  "nodeLabel": "ACT - ACT is a standardized test composed of four sections (plus an optional es…"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-8-A",
+            "path": "5,HTML,1,BODY,14,DIV,6,DIV,1,DIV,0,DIV,0,DIV,5,SECTION,10,DIV,0,DIV,7,DIV,10,DIV,11,P,1,A",
+            "selector": "div.display-body > div.clearfix > p > a",
+            "boundingRect": {
+              "top": 2197,
+              "bottom": 2216,
+              "left": 240,
+              "right": 274,
+              "width": 34,
+              "height": 19
+            },
+            "snippet": "<a href=\"www.Accuplacerpractice.org\" target=\"_blank\" data-uw-rm-brl=\"PR\" data-uw-original-href=\"https://www.njc.edu/www.Accuplacerpractice.org\" aria-label=\"app. - open in a new tab\" data-uw-rm-ext-link=\"\" uw-rm-external-link-id=\"https://www.njc.edu/www.accuplacerpractice.org$app.\">",
+            "nodeLabel": "app.",
+            "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 2.85:1 with the surrounding text. (Minimum contrast is 3:1, link text: #4d2de8, surrounding text: #000000)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+          },
+          "subItems": {
+            "type": "subitems",
+            "items": [
+              {
+                "relatedNode": {
+                  "type": "node",
+                  "lhId": "1-9-P",
+                  "path": "5,HTML,1,BODY,14,DIV,6,DIV,1,DIV,0,DIV,0,DIV,5,SECTION,10,DIV,0,DIV,7,DIV,10,DIV,11,P",
+                  "selector": "div.block-inner > div.display-body > div.clearfix > p",
+                  "boundingRect": {
+                    "top": 2066,
+                    "bottom": 2219,
+                    "left": 12,
+                    "right": 400,
+                    "width": 388,
+                    "height": 154
+                  },
+                  "snippet": "<p data-uw-rm-sr=\"\">",
+                  "nodeLabel": "ACCUPLACER - Placement testing helps determine if the student is ready to enrol…"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-10-A",
+            "path": "5,HTML,1,BODY,14,DIV,6,DIV,1,DIV,0,DIV,0,DIV,5,SECTION,10,DIV,0,DIV,7,DIV,10,DIV,12,P,1,A",
+            "selector": "div.display-body > div.clearfix > p > a#p_lt_zonePageContent_PagePlaceholder_PagePlaceholder_lt_zoneLeft_cmstreemenu_tid_0_0_item",
+            "boundingRect": {
+              "top": 2272,
+              "bottom": 2291,
+              "left": 106,
+              "right": 284,
+              "width": 178,
+              "height": 19
+            },
+            "snippet": "<a href=\"https://www.ase.com/tests\" id=\"p_lt_zonePageContent_PagePlaceholder_PagePlaceholder_lt_zoneLeft_cmstreeme…\" data-uw-rm-brl=\"PR\" data-uw-original-href=\"https://www.ase.com/tests\">",
+            "nodeLabel": "ASE Certification Tests",
+            "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 2.85:1 with the surrounding text. (Minimum contrast is 3:1, link text: #4d2de8, surrounding text: #000000)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+          },
+          "subItems": {
+            "type": "subitems",
+            "items": [
+              {
+                "relatedNode": {
+                  "type": "node",
+                  "lhId": "1-11-P",
+                  "path": "5,HTML,1,BODY,14,DIV,6,DIV,1,DIV,0,DIV,0,DIV,5,SECTION,10,DIV,0,DIV,7,DIV,10,DIV,12,P",
+                  "selector": "div.block-inner > div.display-body > div.clearfix > p",
+                  "boundingRect": {
+                    "top": 2243,
+                    "bottom": 2320,
+                    "left": 12,
+                    "right": 400,
+                    "width": 388,
+                    "height": 77
+                  },
+                  "snippet": "<p>",
+                  "nodeLabel": "ASE – Automotive Service Excellence - Register and pay for ASE Certification Te…"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-12-A",
+            "path": "5,HTML,1,BODY,14,DIV,6,DIV,1,DIV,0,DIV,0,DIV,5,SECTION,10,DIV,0,DIV,7,DIV,10,DIV,13,P,1,A",
+            "selector": "div.display-body > div.clearfix > p > a",
+            "boundingRect": {
+              "top": 2603,
+              "bottom": 2648,
+              "left": 12,
+              "right": 394,
+              "width": 382,
+              "height": 45
+            },
+            "snippet": "<a href=\"https://clep.collegeboard.org/\" data-uw-rm-brl=\"PR\" data-uw-original-href=\"https://clep.collegeboard.org/\">",
+            "nodeLabel": "College-Level Examination Program",
+            "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 2.85:1 with the surrounding text. (Minimum contrast is 3:1, link text: #4d2de8, surrounding text: #000000)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+          },
+          "subItems": {
+            "type": "subitems",
+            "items": [
+              {
+                "relatedNode": {
+                  "type": "node",
+                  "lhId": "1-13-P",
+                  "path": "5,HTML,1,BODY,14,DIV,6,DIV,1,DIV,0,DIV,0,DIV,5,SECTION,10,DIV,0,DIV,7,DIV,10,DIV,13,P",
+                  "selector": "div.block-inner > div.display-body > div.clearfix > p",
+                  "boundingRect": {
+                    "top": 2344,
+                    "bottom": 2651,
+                    "left": 12,
+                    "right": 400,
+                    "width": 388,
+                    "height": 307
+                  },
+                  "snippet": "<p data-uw-rm-sr=\"\">",
+                  "nodeLabel": "CLEP - College Level Exam Program lets students demonstrate the knowledge and m…"
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "debugData": {
+        "type": "debugdata",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2a",
+          "wcag141",
+          "TTv5",
+          "TT13.a",
+          "EN-301-549",
+          "EN-9.1.4.1"
+        ]
+      }
+    },
+    "errorCount": 4
+  }
+]
