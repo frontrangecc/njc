@@ -1,0 +1,560 @@
+[
+  {
+    "id": "aria-allowed-role",
+    "title": "Uses ARIA roles on incompatible elements",
+    "description": "Many HTML elements can only be assigned certain ARIA roles. Using ARIA roles where they are not allowed can interfere with the accessibility of the web page. [Learn more about ARIA roles](https://dequeuniversity.com/rules/axe/4.10/aria-allowed-role).",
+    "score": 0,
+    "scoreDisplayMode": "binary",
+    "details": {
+      "type": "table",
+      "headings": [
+        {
+          "key": "node",
+          "valueType": "node",
+          "subItemsHeading": {
+            "key": "relatedNode",
+            "valueType": "node"
+          },
+          "label": "Failing Elements"
+        }
+      ],
+      "items": [
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-0-LABEL",
+            "path": "5,HTML,1,BODY,15,DIV,5,HEADER,2,DIV,8,DIV,0,LABEL",
+            "selector": "header#navbar-main > div.navbar-header > div.menu-toggle-wrapper > label",
+            "boundingRect": {
+              "top": 105,
+              "bottom": 121,
+              "left": 1290,
+              "right": 1310,
+              "width": 20,
+              "height": 16
+            },
+            "snippet": "<label for=\"menu-toggle\" tabindex=\"0\" aria-label=\"Open Menu\" role=\"button\">",
+            "nodeLabel": "Open Menu",
+            "explanation": "Fix any of the following:\n  ARIA role button is not allowed for given element"
+          }
+        }
+      ],
+      "debugData": {
+        "type": "debugdata",
+        "impact": "minor",
+        "tags": [
+          "cat.aria",
+          "best-practice"
+        ]
+      }
+    },
+    "errorCount": 1
+  },
+  {
+    "id": "aria-prohibited-attr",
+    "title": "Elements use prohibited ARIA attributes",
+    "description": "Using ARIA attributes in roles where they are prohibited can mean that important information is not communicated to users of assistive technologies. [Learn more about prohibited ARIA roles](https://dequeuniversity.com/rules/axe/4.10/aria-prohibited-attr).",
+    "score": 0,
+    "scoreDisplayMode": "binary",
+    "details": {
+      "type": "table",
+      "headings": [
+        {
+          "key": "node",
+          "valueType": "node",
+          "subItemsHeading": {
+            "key": "relatedNode",
+            "valueType": "node"
+          },
+          "label": "Failing Elements"
+        }
+      ],
+      "items": [
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-1-A",
+            "path": "5,HTML,1,BODY,15,DIV,4,A",
+            "selector": "body.navbar-is-fixed-top > div.dialog-off-canvas-main-canvas > a#top",
+            "boundingRect": {
+              "top": 168,
+              "bottom": 168,
+              "left": 0,
+              "right": 0,
+              "width": 0,
+              "height": 0
+            },
+            "snippet": "<a id=\"top\" data-uw-rm-kbnav=\"anohref\" tabindex=\"0\" aria-label=\"Open this option\" data-uw-rm-empty-ctrl=\"\">",
+            "nodeLabel": "Open this option",
+            "explanation": "Fix all of the following:\n  aria-label attribute cannot be used on a a with no valid role attribute."
+          }
+        },
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-2-A",
+            "path": "5,HTML,1,BODY,15,DIV,6,DIV,0,DIV,0,DIV,0,DIV,0,A",
+            "selector": "div.container > div.row > div#content > a#main-content",
+            "boundingRect": {
+              "top": 168,
+              "bottom": 168,
+              "left": 102,
+              "right": 102,
+              "width": 0,
+              "height": 0
+            },
+            "snippet": "<a id=\"main-content\" data-uw-rm-kbnav=\"anohref\" tabindex=\"0\" aria-label=\"Open this option\" data-uw-rm-empty-ctrl=\"\">",
+            "nodeLabel": "Open this option",
+            "explanation": "Fix all of the following:\n  aria-label attribute cannot be used on a a with no valid role attribute."
+          }
+        }
+      ],
+      "debugData": {
+        "type": "debugdata",
+        "impact": "serious",
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag412",
+          "EN-301-549",
+          "EN-9.4.1.2"
+        ]
+      }
+    },
+    "errorCount": 2
+  },
+  {
+    "id": "color-contrast",
+    "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+    "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.10/color-contrast).",
+    "score": 0,
+    "scoreDisplayMode": "binary",
+    "details": {
+      "type": "table",
+      "headings": [
+        {
+          "key": "node",
+          "valueType": "node",
+          "subItemsHeading": {
+            "key": "relatedNode",
+            "valueType": "node"
+          },
+          "label": "Failing Elements"
+        }
+      ],
+      "items": [
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-3-SPAN",
+            "path": "5,HTML,1,BODY,15,DIV,6,DIV,0,DIV,0,DIV,1,ASIDE,4,DIV,4,DIV,0,DIV,0,DIV,0,A,0,SPAN",
+            "selector": "div.block-inner > div > a.button > span.button-text",
+            "boundingRect": {
+              "top": 244,
+              "bottom": 262,
+              "left": 1012,
+              "right": 1118,
+              "width": 105,
+              "height": 18
+            },
+            "snippet": "<span class=\"button-text\">",
+            "nodeLabel": "Today's Events",
+            "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 2.84 (foreground color: #ffffff, background color: #999999, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          "subItems": {
+            "type": "subitems",
+            "items": [
+              {
+                "relatedNode": {
+                  "type": "node",
+                  "lhId": "1-4-A",
+                  "path": "5,HTML,1,BODY,15,DIV,6,DIV,0,DIV,0,DIV,1,ASIDE,4,DIV,4,DIV,0,DIV,0,DIV,0,A",
+                  "selector": "div#block-simple-block-calendar-sidebar-buttons > div.block-inner > div > a.button",
+                  "boundingRect": {
+                    "top": 228,
+                    "bottom": 278,
+                    "left": 882,
+                    "right": 1248,
+                    "width": 366,
+                    "height": 50
+                  },
+                  "snippet": "<a href=\"/calendar/day\" class=\"button grey solid\" target=\"\" data-uw-rm-brl=\"PR\" data-uw-original-href=\"https://www.njc.edu/calendar/day\">",
+                  "nodeLabel": "Today's Events"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-5-SPAN",
+            "path": "5,HTML,1,BODY,15,DIV,6,DIV,0,DIV,0,DIV,1,ASIDE,4,DIV,4,DIV,0,DIV,1,DIV,0,A,0,SPAN",
+            "selector": "div.block-inner > div > a.button > span.button-text",
+            "boundingRect": {
+              "top": 302,
+              "bottom": 320,
+              "left": 993,
+              "right": 1137,
+              "width": 143,
+              "height": 18
+            },
+            "snippet": "<span class=\"button-text\">",
+            "nodeLabel": "This Month's Events",
+            "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 2.84 (foreground color: #ffffff, background color: #999999, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          "subItems": {
+            "type": "subitems",
+            "items": [
+              {
+                "relatedNode": {
+                  "type": "node",
+                  "lhId": "1-6-A",
+                  "path": "5,HTML,1,BODY,15,DIV,6,DIV,0,DIV,0,DIV,1,ASIDE,4,DIV,4,DIV,0,DIV,1,DIV,0,A",
+                  "selector": "div#block-simple-block-calendar-sidebar-buttons > div.block-inner > div > a.button",
+                  "boundingRect": {
+                    "top": 286,
+                    "bottom": 336,
+                    "left": 882,
+                    "right": 1248,
+                    "width": 366,
+                    "height": 50
+                  },
+                  "snippet": "<a href=\"/calendar\" class=\"button grey solid\" target=\"\" data-uw-rm-brl=\"PR\" data-uw-original-href=\"https://www.njc.edu/calendar\">",
+                  "nodeLabel": "This Month's Events"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-7-SPAN",
+            "path": "5,HTML,1,BODY,15,DIV,6,DIV,0,DIV,0,DIV,1,ASIDE,4,DIV,4,DIV,0,DIV,2,DIV,0,A,0,SPAN",
+            "selector": "div.block-inner > div > a.button > span.button-text",
+            "boundingRect": {
+              "top": 360,
+              "bottom": 378,
+              "left": 994,
+              "right": 1136,
+              "width": 141,
+              "height": 18
+            },
+            "snippet": "<span class=\"button-text\">",
+            "nodeLabel": "Academic Calendar",
+            "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 2.84 (foreground color: #ffffff, background color: #999999, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          "subItems": {
+            "type": "subitems",
+            "items": [
+              {
+                "relatedNode": {
+                  "type": "node",
+                  "lhId": "1-8-A",
+                  "path": "5,HTML,1,BODY,15,DIV,6,DIV,0,DIV,0,DIV,1,ASIDE,4,DIV,4,DIV,0,DIV,2,DIV,0,A",
+                  "selector": "div#block-simple-block-calendar-sidebar-buttons > div.block-inner > div > a.button",
+                  "boundingRect": {
+                    "top": 344,
+                    "bottom": 394,
+                    "left": 882,
+                    "right": 1248,
+                    "width": 366,
+                    "height": 50
+                  },
+                  "snippet": "<a href=\"/academic-calendar\" class=\"button grey solid\" target=\"\" data-uw-rm-brl=\"PR\" data-uw-original-href=\"https://www.njc.edu/academic-calendar\">",
+                  "nodeLabel": "Academic Calendar"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-9-SPAN",
+            "path": "5,HTML,1,BODY,15,DIV,6,DIV,0,DIV,0,DIV,1,ASIDE,4,DIV,10,DIV,0,DIV,0,DIV,0,DIV,1,TABLE,1,TBODY,0,TR,0,TD,0,SPAN",
+            "selector": "tbody > tr > td.ui-datepicker-week-end > span.ui-state-default",
+            "boundingRect": {
+              "top": 556,
+              "bottom": 590,
+              "left": 888,
+              "right": 936,
+              "width": 49,
+              "height": 34
+            },
+            "snippet": "<span class=\"ui-state-default\">",
+            "nodeLabel": "27",
+            "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 1.81 (foreground color: #bebebe, background color: #fcfcfc, font size: 12.1pt (16.2px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        },
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-10-SPAN",
+            "path": "5,HTML,1,BODY,15,DIV,6,DIV,0,DIV,0,DIV,1,ASIDE,4,DIV,10,DIV,0,DIV,0,DIV,0,DIV,1,TABLE,1,TBODY,0,TR,1,TD,0,SPAN",
+            "selector": "tbody > tr > td.ui-datepicker-other-month > span.ui-state-default",
+            "boundingRect": {
+              "top": 556,
+              "bottom": 590,
+              "left": 938,
+              "right": 992,
+              "width": 53,
+              "height": 34
+            },
+            "snippet": "<span class=\"ui-state-default\">",
+            "nodeLabel": "28",
+            "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 1.81 (foreground color: #bebebe, background color: #fcfcfc, font size: 12.1pt (16.2px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        },
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-11-A",
+            "path": "5,HTML,1,BODY,15,DIV,6,DIV,0,DIV,0,DIV,1,ASIDE,4,DIV,10,DIV,0,DIV,0,DIV,0,DIV,1,TABLE,1,TBODY,0,TR,2,TD,0,A",
+            "selector": "tbody > tr > td.ui-datepicker-other-month > a.ui-state-default",
+            "boundingRect": {
+              "top": 556,
+              "bottom": 590,
+              "left": 994,
+              "right": 1040,
+              "width": 46,
+              "height": 34
+            },
+            "snippet": "<a class=\"ui-state-default ui-priority-secondary\" href=\"#\" aria-current=\"false\" data-date=\"29\" data-uw-rm-brl=\"PR\" data-uw-original-href=\"https://www.njc.edu/calendar/event/052725/10-week-summer-session#\">",
+            "nodeLabel": "29",
+            "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 3.9 (foreground color: #7d7d7d, background color: #f9f9f9, font size: 12.1pt (16.2px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          "subItems": {
+            "type": "subitems",
+            "items": [
+              {
+                "relatedNode": {
+                  "type": "node",
+                  "lhId": "1-12-DIV",
+                  "path": "5,HTML,1,BODY,15,DIV,6,DIV,0,DIV,0,DIV,1,ASIDE,4,DIV,10,DIV,0,DIV,0,DIV,0,DIV",
+                  "selector": "div#block-a5-datepicker-block > div.block-inner > div#datepicker > div.ui-datepicker-inline",
+                  "boundingRect": {
+                    "top": 460,
+                    "bottom": 744,
+                    "left": 882,
+                    "right": 1248,
+                    "width": 366,
+                    "height": 284
+                  },
+                  "snippet": "<div class=\"ui-datepicker-inline ui-datepicker ui-widget ui-widget-content ui-helper-c…\" style=\"display: block;\">",
+                  "nodeLabel": "Prev\nNext\nMay 2025\nSu\tMo\tTu\tWe\tTh\tFr\tSa\n\n27\n\t\n28\n\t\n29\n\t\n30\n\t\n1\n\t\n2\n\t\n3\n\n\n4\n\t\n5\n…"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-13-SPAN",
+            "path": "5,HTML,1,BODY,15,DIV,6,DIV,0,DIV,0,DIV,1,ASIDE,4,DIV,10,DIV,0,DIV,0,DIV,0,DIV,1,TABLE,1,TBODY,0,TR,3,TD,0,SPAN",
+            "selector": "tbody > tr > td.ui-datepicker-other-month > span.ui-state-default",
+            "boundingRect": {
+              "top": 556,
+              "bottom": 590,
+              "left": 1042,
+              "right": 1096,
+              "width": 54,
+              "height": 34
+            },
+            "snippet": "<span class=\"ui-state-default\">",
+            "nodeLabel": "30",
+            "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 1.81 (foreground color: #bebebe, background color: #fcfcfc, font size: 12.1pt (16.2px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        },
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-14-SPAN",
+            "path": "5,HTML,1,BODY,15,DIV,6,DIV,0,DIV,0,DIV,1,ASIDE,4,DIV,10,DIV,0,DIV,0,DIV,0,DIV,1,TABLE,1,TBODY,1,TR,6,TD,0,SPAN",
+            "selector": "tbody > tr > td.ui-datepicker-week-end > span.ui-state-default",
+            "boundingRect": {
+              "top": 592,
+              "bottom": 627,
+              "left": 1195,
+              "right": 1242,
+              "width": 47,
+              "height": 34
+            },
+            "snippet": "<span class=\"ui-state-default\">",
+            "nodeLabel": "10",
+            "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 1.81 (foreground color: #bebebe, background color: #fcfcfc, font size: 12.1pt (16.2px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        },
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-15-SPAN",
+            "path": "5,HTML,1,BODY,15,DIV,6,DIV,0,DIV,0,DIV,1,ASIDE,4,DIV,10,DIV,0,DIV,0,DIV,0,DIV,1,TABLE,1,TBODY,2,TR,0,TD,0,SPAN",
+            "selector": "tbody > tr > td.ui-datepicker-week-end > span.ui-state-default",
+            "boundingRect": {
+              "top": 629,
+              "bottom": 663,
+              "left": 888,
+              "right": 936,
+              "width": 49,
+              "height": 34
+            },
+            "snippet": "<span class=\"ui-state-default\">",
+            "nodeLabel": "11",
+            "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 1.81 (foreground color: #bebebe, background color: #fcfcfc, font size: 12.1pt (16.2px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        },
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-16-SPAN",
+            "path": "5,HTML,1,BODY,15,DIV,6,DIV,0,DIV,0,DIV,1,ASIDE,4,DIV,10,DIV,0,DIV,0,DIV,0,DIV,1,TABLE,1,TBODY,2,TR,6,TD,0,SPAN",
+            "selector": "tbody > tr > td.ui-datepicker-week-end > span.ui-state-default",
+            "boundingRect": {
+              "top": 629,
+              "bottom": 663,
+              "left": 1195,
+              "right": 1242,
+              "width": 47,
+              "height": 34
+            },
+            "snippet": "<span class=\"ui-state-default\">",
+            "nodeLabel": "17",
+            "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 1.81 (foreground color: #bebebe, background color: #fcfcfc, font size: 12.1pt (16.2px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        },
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-17-SPAN",
+            "path": "5,HTML,1,BODY,15,DIV,6,DIV,0,DIV,0,DIV,1,ASIDE,4,DIV,10,DIV,0,DIV,0,DIV,0,DIV,1,TABLE,1,TBODY,3,TR,0,TD,0,SPAN",
+            "selector": "tbody > tr > td.ui-datepicker-week-end > span.ui-state-default",
+            "boundingRect": {
+              "top": 665,
+              "bottom": 699,
+              "left": 888,
+              "right": 936,
+              "width": 49,
+              "height": 34
+            },
+            "snippet": "<span class=\"ui-state-default\">",
+            "nodeLabel": "18",
+            "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 1.81 (foreground color: #bebebe, background color: #fcfcfc, font size: 12.1pt (16.2px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        },
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-18-SPAN",
+            "path": "5,HTML,1,BODY,15,DIV,6,DIV,0,DIV,0,DIV,1,ASIDE,4,DIV,10,DIV,0,DIV,0,DIV,0,DIV,1,TABLE,1,TBODY,3,TR,3,TD,0,SPAN",
+            "selector": "tbody > tr > td.ui-datepicker-unselectable > span.ui-state-default",
+            "boundingRect": {
+              "top": 665,
+              "bottom": 699,
+              "left": 1042,
+              "right": 1096,
+              "width": 54,
+              "height": 34
+            },
+            "snippet": "<span class=\"ui-state-default\">",
+            "nodeLabel": "21",
+            "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 1.81 (foreground color: #bebebe, background color: #fcfcfc, font size: 12.1pt (16.2px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        },
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-19-SPAN",
+            "path": "5,HTML,1,BODY,15,DIV,6,DIV,0,DIV,0,DIV,1,ASIDE,4,DIV,10,DIV,0,DIV,0,DIV,0,DIV,1,TABLE,1,TBODY,3,TR,4,TD,0,SPAN",
+            "selector": "tbody > tr > td.ui-datepicker-unselectable > span.ui-state-default",
+            "boundingRect": {
+              "top": 665,
+              "bottom": 699,
+              "left": 1098,
+              "right": 1145,
+              "width": 47,
+              "height": 34
+            },
+            "snippet": "<span class=\"ui-state-default\">",
+            "nodeLabel": "22",
+            "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 1.81 (foreground color: #bebebe, background color: #fcfcfc, font size: 12.1pt (16.2px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        },
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-20-SPAN",
+            "path": "5,HTML,1,BODY,15,DIV,6,DIV,0,DIV,0,DIV,1,ASIDE,4,DIV,10,DIV,0,DIV,0,DIV,0,DIV,1,TABLE,1,TBODY,3,TR,5,TD,0,SPAN",
+            "selector": "tbody > tr > td.ui-datepicker-unselectable > span.ui-state-default",
+            "boundingRect": {
+              "top": 665,
+              "bottom": 699,
+              "left": 1147,
+              "right": 1193,
+              "width": 46,
+              "height": 34
+            },
+            "snippet": "<span class=\"ui-state-default\">",
+            "nodeLabel": "23",
+            "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 1.81 (foreground color: #bebebe, background color: #fcfcfc, font size: 12.1pt (16.2px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        },
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-21-SPAN",
+            "path": "5,HTML,1,BODY,15,DIV,6,DIV,0,DIV,0,DIV,1,ASIDE,4,DIV,10,DIV,0,DIV,0,DIV,0,DIV,1,TABLE,1,TBODY,3,TR,6,TD,0,SPAN",
+            "selector": "tbody > tr > td.ui-datepicker-week-end > span.ui-state-default",
+            "boundingRect": {
+              "top": 665,
+              "bottom": 699,
+              "left": 1195,
+              "right": 1242,
+              "width": 47,
+              "height": 34
+            },
+            "snippet": "<span class=\"ui-state-default\">",
+            "nodeLabel": "24",
+            "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 1.81 (foreground color: #bebebe, background color: #fcfcfc, font size: 12.1pt (16.2px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        },
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-22-SPAN",
+            "path": "5,HTML,1,BODY,15,DIV,6,DIV,0,DIV,0,DIV,1,ASIDE,4,DIV,10,DIV,0,DIV,0,DIV,0,DIV,1,TABLE,1,TBODY,4,TR,0,TD,0,SPAN",
+            "selector": "tbody > tr > td.ui-datepicker-week-end > span.ui-state-default",
+            "boundingRect": {
+              "top": 701,
+              "bottom": 736,
+              "left": 888,
+              "right": 936,
+              "width": 49,
+              "height": 34
+            },
+            "snippet": "<span class=\"ui-state-default\">",
+            "nodeLabel": "25",
+            "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 1.81 (foreground color: #bebebe, background color: #fcfcfc, font size: 12.1pt (16.2px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        }
+      ],
+      "debugData": {
+        "type": "debugdata",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2aa",
+          "wcag143",
+          "TTv5",
+          "TT13.c",
+          "EN-301-549",
+          "EN-9.1.4.3",
+          "ACT"
+        ]
+      }
+    },
+    "errorCount": 16
+  }
+]

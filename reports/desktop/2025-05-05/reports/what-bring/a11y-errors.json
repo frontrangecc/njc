@@ -1,0 +1,158 @@
+[
+  {
+    "id": "aria-allowed-attr",
+    "title": "`[aria-*]` attributes do not match their roles",
+    "description": "Each ARIA `role` supports a specific subset of `aria-*` attributes. Mismatching these invalidates the `aria-*` attributes. [Learn how to match ARIA attributes to their roles](https://dequeuniversity.com/rules/axe/4.10/aria-allowed-attr).",
+    "score": 0,
+    "scoreDisplayMode": "binary",
+    "details": {
+      "type": "table",
+      "headings": [
+        {
+          "key": "node",
+          "valueType": "node",
+          "subItemsHeading": {
+            "key": "relatedNode",
+            "valueType": "node"
+          },
+          "label": "Failing Elements"
+        }
+      ],
+      "items": [
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-0-SPAN",
+            "path": "5,HTML,1,BODY,15,DIV,6,DIV,0,DIV,4,SECTION,10,DIV,0,DIV,4,DIV,0,UL,4,LI,0,SPAN",
+            "selector": "div.scrolling-nav > ul.clearfix > li.nav-item > span.dropdown-toggle",
+            "boundingRect": {
+              "top": 348,
+              "bottom": 382,
+              "left": 624,
+              "right": 792,
+              "width": 168,
+              "height": 34
+            },
+            "snippet": "<span target=\"_self\" class=\"dropdown-toggle nav-link-\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\" aria-haspopup=\"true\">",
+            "nodeLabel": "Apply for Housing",
+            "explanation": "Fix all of the following:\n  ARIA attribute is not allowed: aria-expanded=\"false\""
+          }
+        }
+      ],
+      "debugData": {
+        "type": "debugdata",
+        "impact": "critical",
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag412",
+          "EN-301-549",
+          "EN-9.4.1.2"
+        ]
+      }
+    },
+    "errorCount": 1
+  },
+  {
+    "id": "aria-allowed-role",
+    "title": "Uses ARIA roles on incompatible elements",
+    "description": "Many HTML elements can only be assigned certain ARIA roles. Using ARIA roles where they are not allowed can interfere with the accessibility of the web page. [Learn more about ARIA roles](https://dequeuniversity.com/rules/axe/4.10/aria-allowed-role).",
+    "score": 0,
+    "scoreDisplayMode": "binary",
+    "details": {
+      "type": "table",
+      "headings": [
+        {
+          "key": "node",
+          "valueType": "node",
+          "subItemsHeading": {
+            "key": "relatedNode",
+            "valueType": "node"
+          },
+          "label": "Failing Elements"
+        }
+      ],
+      "items": [
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-1-LABEL",
+            "path": "5,HTML,1,BODY,15,DIV,5,HEADER,2,DIV,8,DIV,0,LABEL",
+            "selector": "header#navbar-main > div.navbar-header > div.menu-toggle-wrapper > label",
+            "boundingRect": {
+              "top": 105,
+              "bottom": 121,
+              "left": 1290,
+              "right": 1310,
+              "width": 20,
+              "height": 16
+            },
+            "snippet": "<label for=\"menu-toggle\" tabindex=\"0\" aria-label=\"Open Menu\" role=\"button\">",
+            "nodeLabel": "Open Menu",
+            "explanation": "Fix any of the following:\n  ARIA role button is not allowed for given element"
+          }
+        }
+      ],
+      "debugData": {
+        "type": "debugdata",
+        "impact": "minor",
+        "tags": [
+          "cat.aria",
+          "best-practice"
+        ]
+      }
+    },
+    "errorCount": 1
+  },
+  {
+    "id": "heading-order",
+    "title": "Heading elements are not in a sequentially-descending order",
+    "description": "Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to navigate and understand when using assistive technologies. [Learn more about heading order](https://dequeuniversity.com/rules/axe/4.10/heading-order).",
+    "score": 0,
+    "scoreDisplayMode": "binary",
+    "details": {
+      "type": "table",
+      "headings": [
+        {
+          "key": "node",
+          "valueType": "node",
+          "subItemsHeading": {
+            "key": "relatedNode",
+            "valueType": "node"
+          },
+          "label": "Failing Elements"
+        }
+      ],
+      "items": [
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-2-H3",
+            "path": "5,HTML,1,BODY,15,DIV,6,DIV,1,DIV,0,DIV,0,DIV,5,SECTION,22,DIV,0,DIV,7,DIV,10,DIV,2,H3",
+            "selector": "div.block-inner > div.node > div.clearfix > h3",
+            "boundingRect": {
+              "top": 1195,
+              "bottom": 1222,
+              "left": 102,
+              "right": 858,
+              "width": 756,
+              "height": 28
+            },
+            "snippet": "<h3>",
+            "nodeLabel": "Some suggestions of what to bring when moving into college:",
+            "explanation": "Fix any of the following:\n  Heading order invalid"
+          }
+        }
+      ],
+      "debugData": {
+        "type": "debugdata",
+        "impact": "moderate",
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ]
+      }
+    },
+    "errorCount": 1
+  }
+]

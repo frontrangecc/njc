@@ -1,0 +1,667 @@
+[
+  {
+    "id": "aria-allowed-role",
+    "title": "Uses ARIA roles on incompatible elements",
+    "description": "Many HTML elements can only be assigned certain ARIA roles. Using ARIA roles where they are not allowed can interfere with the accessibility of the web page. [Learn more about ARIA roles](https://dequeuniversity.com/rules/axe/4.10/aria-allowed-role).",
+    "score": 0,
+    "scoreDisplayMode": "binary",
+    "details": {
+      "type": "table",
+      "headings": [
+        {
+          "key": "node",
+          "valueType": "node",
+          "subItemsHeading": {
+            "key": "relatedNode",
+            "valueType": "node"
+          },
+          "label": "Failing Elements"
+        }
+      ],
+      "items": [
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-0-LABEL",
+            "path": "5,HTML,1,BODY,15,DIV,5,HEADER,2,DIV,8,DIV,0,LABEL",
+            "selector": "header#navbar-main > div.navbar-header > div.menu-toggle-wrapper > label",
+            "boundingRect": {
+              "top": 105,
+              "bottom": 121,
+              "left": 1290,
+              "right": 1310,
+              "width": 20,
+              "height": 16
+            },
+            "snippet": "<label for=\"menu-toggle\" tabindex=\"0\" aria-label=\"Open Menu\" role=\"button\">",
+            "nodeLabel": "Open Menu",
+            "explanation": "Fix any of the following:\n  ARIA role button is not allowed for given element"
+          }
+        }
+      ],
+      "debugData": {
+        "type": "debugdata",
+        "impact": "minor",
+        "tags": [
+          "cat.aria",
+          "best-practice"
+        ]
+      }
+    },
+    "errorCount": 1
+  },
+  {
+    "id": "aria-prohibited-attr",
+    "title": "Elements use prohibited ARIA attributes",
+    "description": "Using ARIA attributes in roles where they are prohibited can mean that important information is not communicated to users of assistive technologies. [Learn more about prohibited ARIA roles](https://dequeuniversity.com/rules/axe/4.10/aria-prohibited-attr).",
+    "score": 0,
+    "scoreDisplayMode": "binary",
+    "details": {
+      "type": "table",
+      "headings": [
+        {
+          "key": "node",
+          "valueType": "node",
+          "subItemsHeading": {
+            "key": "relatedNode",
+            "valueType": "node"
+          },
+          "label": "Failing Elements"
+        }
+      ],
+      "items": [
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-1-A",
+            "path": "5,HTML,1,BODY,15,DIV,4,A",
+            "selector": "body.navbar-is-fixed-top > div.dialog-off-canvas-main-canvas > a#top",
+            "boundingRect": {
+              "top": 168,
+              "bottom": 168,
+              "left": 0,
+              "right": 0,
+              "width": 0,
+              "height": 0
+            },
+            "snippet": "<a id=\"top\" data-uw-rm-kbnav=\"anohref\" tabindex=\"0\" aria-label=\"Open this option\" data-uw-rm-empty-ctrl=\"\">",
+            "nodeLabel": "Open this option",
+            "explanation": "Fix all of the following:\n  aria-label attribute cannot be used on a a with no valid role attribute."
+          }
+        },
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-2-A",
+            "path": "5,HTML,1,BODY,15,DIV,6,DIV,0,DIV,0,A",
+            "selector": "div.dialog-off-canvas-main-canvas > div#main-container > div#content > a#main-content",
+            "boundingRect": {
+              "top": 168,
+              "bottom": 168,
+              "left": 0,
+              "right": 0,
+              "width": 0,
+              "height": 0
+            },
+            "snippet": "<a id=\"main-content\" data-uw-rm-kbnav=\"anohref\" tabindex=\"0\" aria-label=\"Open this option\" data-uw-rm-empty-ctrl=\"\">",
+            "nodeLabel": "Open this option",
+            "explanation": "Fix all of the following:\n  aria-label attribute cannot be used on a a with no valid role attribute."
+          }
+        }
+      ],
+      "debugData": {
+        "type": "debugdata",
+        "impact": "serious",
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag412",
+          "EN-301-549",
+          "EN-9.4.1.2"
+        ]
+      }
+    },
+    "errorCount": 2
+  },
+  {
+    "id": "link-in-text-block",
+    "title": "Links rely on color to be distinguishable.",
+    "description": "Low-contrast text is difficult or impossible for many users to read. Link text that is discernible improves the experience for users with low vision. [Learn how to make links distinguishable](https://dequeuniversity.com/rules/axe/4.10/link-in-text-block).",
+    "score": 0,
+    "scoreDisplayMode": "binary",
+    "details": {
+      "type": "table",
+      "headings": [
+        {
+          "key": "node",
+          "valueType": "node",
+          "subItemsHeading": {
+            "key": "relatedNode",
+            "valueType": "node"
+          },
+          "label": "Failing Elements"
+        }
+      ],
+      "items": [
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-3-A",
+            "path": "5,HTML,1,BODY,15,DIV,6,DIV,0,DIV,5,SECTION,10,DIV,0,DIV,6,ARTICLE,0,DIV,0,DIV,0,DIV,4,DIV,1,P,1,A",
+            "selector": "div.col-md-8 > div.clearfix > p > a",
+            "boundingRect": {
+              "top": 907,
+              "bottom": 929,
+              "left": 198,
+              "right": 478,
+              "width": 280,
+              "height": 22
+            },
+            "snippet": "<a href=\"https://www.bls.gov/ooh/fastest-growing.htm\" data-uw-rm-brl=\"PR\" data-uw-original-href=\"https://www.bls.gov/ooh/fastest-growing.htm\">",
+            "nodeLabel": "10 fastest-growing occupations",
+            "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 2.85:1 with the surrounding text. (Minimum contrast is 3:1, link text: #4d2de8, surrounding text: #000000)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+          },
+          "subItems": {
+            "type": "subitems",
+            "items": [
+              {
+                "relatedNode": {
+                  "type": "node",
+                  "lhId": "1-4-P",
+                  "path": "5,HTML,1,BODY,15,DIV,6,DIV,0,DIV,5,SECTION,10,DIV,0,DIV,6,ARTICLE,0,DIV,0,DIV,0,DIV,4,DIV,1,P",
+                  "selector": "div.row > div.col-md-8 > div.clearfix > p",
+                  "boundingRect": {
+                    "top": 904,
+                    "bottom": 1019,
+                    "left": 102,
+                    "right": 858,
+                    "width": 756,
+                    "height": 115
+                  },
+                  "snippet": "<p>",
+                  "nodeLabel": "Of the top 10 fastest-growing occupations in the United States, six are in the …"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-5-A",
+            "path": "5,HTML,1,BODY,15,DIV,6,DIV,0,DIV,5,SECTION,10,DIV,0,DIV,6,ARTICLE,0,DIV,0,DIV,0,DIV,4,DIV,1,P,4,A",
+            "selector": "div.col-md-8 > div.clearfix > p > a",
+            "boundingRect": {
+              "top": 965,
+              "bottom": 987,
+              "left": 181,
+              "right": 303,
+              "width": 122,
+              "height": 22
+            },
+            "snippet": "<a href=\"https://money.usnews.com/careers/best-jobs/rankings/the-100-best-jobs\" data-uw-rm-brl=\"PR\" data-uw-original-href=\"https://money.usnews.com/careers/best-jobs/rankings/the-100-best-jobs\">",
+            "nodeLabel": "100 Best Jobs",
+            "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 2.85:1 with the surrounding text. (Minimum contrast is 3:1, link text: #4d2de8, surrounding text: #000000)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+          },
+          "subItems": {
+            "type": "subitems",
+            "items": [
+              {
+                "relatedNode": {
+                  "type": "node",
+                  "lhId": "1-4-P",
+                  "path": "5,HTML,1,BODY,15,DIV,6,DIV,0,DIV,5,SECTION,10,DIV,0,DIV,6,ARTICLE,0,DIV,0,DIV,0,DIV,4,DIV,1,P",
+                  "selector": "div.row > div.col-md-8 > div.clearfix > p",
+                  "boundingRect": {
+                    "top": 904,
+                    "bottom": 1019,
+                    "left": 102,
+                    "right": 858,
+                    "width": 756,
+                    "height": 115
+                  },
+                  "snippet": "<p>",
+                  "nodeLabel": "Of the top 10 fastest-growing occupations in the United States, six are in the …"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-6-A",
+            "path": "5,HTML,1,BODY,15,DIV,6,DIV,0,DIV,5,SECTION,10,DIV,0,DIV,6,ARTICLE,0,DIV,0,DIV,0,DIV,4,DIV,5,P,3,A",
+            "selector": "div.col-md-8 > div.clearfix > p > a",
+            "boundingRect": {
+              "top": 1406,
+              "bottom": 1428,
+              "left": 501,
+              "right": 699,
+              "width": 197,
+              "height": 22
+            },
+            "snippet": "<a href=\"https://money.usnews.com/careers/best-jobs/rankings/best-healthcare-jobs\" data-uw-rm-brl=\"PR\" data-uw-original-href=\"https://money.usnews.com/careers/best-jobs/rankings/best-healthcare-jobs\">",
+            "nodeLabel": "Best Health Care Jobs",
+            "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 2.85:1 with the surrounding text. (Minimum contrast is 3:1, link text: #4d2de8, surrounding text: #000000)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+          },
+          "subItems": {
+            "type": "subitems",
+            "items": [
+              {
+                "relatedNode": {
+                  "type": "node",
+                  "lhId": "1-7-P",
+                  "path": "5,HTML,1,BODY,15,DIV,6,DIV,0,DIV,5,SECTION,10,DIV,0,DIV,6,ARTICLE,0,DIV,0,DIV,0,DIV,4,DIV,5,P",
+                  "selector": "div.row > div.col-md-8 > div.clearfix > p",
+                  "boundingRect": {
+                    "top": 1374,
+                    "bottom": 1461,
+                    "left": 102,
+                    "right": 858,
+                    "width": 756,
+                    "height": 86
+                  },
+                  "snippet": "<p>",
+                  "nodeLabel": "Career publications like U.S. News & World Report’s annual best job rankings ar…"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-8-A",
+            "path": "5,HTML,1,BODY,15,DIV,6,DIV,0,DIV,5,SECTION,10,DIV,0,DIV,6,ARTICLE,0,DIV,0,DIV,0,DIV,4,DIV,14,P,1,A",
+            "selector": "div.col-md-8 > div.clearfix > p > a",
+            "boundingRect": {
+              "top": 2363,
+              "bottom": 2385,
+              "left": 282,
+              "right": 662,
+              "width": 381,
+              "height": 22
+            },
+            "snippet": "<a href=\"https://www.njc.edu/program/health-care-transfer\" data-uw-rm-brl=\"PR\" data-uw-original-href=\"https://www.njc.edu/program/health-care-transfer\">",
+            "nodeLabel": "health transfer associate degree programs",
+            "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 2.85:1 with the surrounding text. (Minimum contrast is 3:1, link text: #4d2de8, surrounding text: #000000)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+          },
+          "subItems": {
+            "type": "subitems",
+            "items": [
+              {
+                "relatedNode": {
+                  "type": "node",
+                  "lhId": "1-9-P",
+                  "path": "5,HTML,1,BODY,15,DIV,6,DIV,0,DIV,5,SECTION,10,DIV,0,DIV,6,ARTICLE,0,DIV,0,DIV,0,DIV,4,DIV,14,P",
+                  "selector": "div.row > div.col-md-8 > div.clearfix > p",
+                  "boundingRect": {
+                    "top": 2360,
+                    "bottom": 2446,
+                    "left": 102,
+                    "right": 858,
+                    "width": 756,
+                    "height": 86
+                  },
+                  "snippet": "<p>",
+                  "nodeLabel": "Northeastern offers health transfer associate degree programs, which give you a…"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-10-A",
+            "path": "5,HTML,1,BODY,15,DIV,6,DIV,0,DIV,5,SECTION,10,DIV,0,DIV,6,ARTICLE,0,DIV,0,DIV,0,DIV,4,DIV,26,P,1,A",
+            "selector": "div.col-md-8 > div.clearfix > p > a",
+            "boundingRect": {
+              "top": 3486,
+              "bottom": 3508,
+              "left": 239,
+              "right": 619,
+              "width": 381,
+              "height": 22
+            },
+            "snippet": "<a href=\"https://www.njc.edu/program/health-care-transfer\" data-uw-rm-brl=\"PR\" data-uw-original-href=\"https://www.njc.edu/program/health-care-transfer\">",
+            "nodeLabel": "health transfer associate degree programs",
+            "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 2.85:1 with the surrounding text. (Minimum contrast is 3:1, link text: #4d2de8, surrounding text: #000000)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+          },
+          "subItems": {
+            "type": "subitems",
+            "items": [
+              {
+                "relatedNode": {
+                  "type": "node",
+                  "lhId": "1-11-P",
+                  "path": "5,HTML,1,BODY,15,DIV,6,DIV,0,DIV,5,SECTION,10,DIV,0,DIV,6,ARTICLE,0,DIV,0,DIV,0,DIV,4,DIV,26,P",
+                  "selector": "div.row > div.col-md-8 > div.clearfix > p",
+                  "boundingRect": {
+                    "top": 3454,
+                    "bottom": 3569,
+                    "left": 102,
+                    "right": 858,
+                    "width": 756,
+                    "height": 115
+                  },
+                  "snippet": "<p>",
+                  "nodeLabel": "The good-paying health care jobs and career paths highlighted here also align w…"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-12-A",
+            "path": "5,HTML,1,BODY,15,DIV,6,DIV,0,DIV,5,SECTION,10,DIV,0,DIV,6,ARTICLE,0,DIV,0,DIV,0,DIV,4,DIV,29,P,1,A",
+            "selector": "div.col-md-8 > div.clearfix > p > a",
+            "boundingRect": {
+              "top": 3788,
+              "bottom": 3810,
+              "left": 102,
+              "right": 344,
+              "width": 242,
+              "height": 22
+            },
+            "snippet": "<a href=\"https://www.njc.edu/program/health-care-transfer-programs/nutrition-and-fo…\" data-uw-rm-brl=\"PR\" data-uw-original-href=\"https://www.njc.edu/program/health-care-transfer-programs/nutrition-and-fo…\">",
+            "nodeLabel": "Dieticians and nutritionists",
+            "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 2.85:1 with the surrounding text. (Minimum contrast is 3:1, link text: #4d2de8, surrounding text: #000000)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+          },
+          "subItems": {
+            "type": "subitems",
+            "items": [
+              {
+                "relatedNode": {
+                  "type": "node",
+                  "lhId": "1-13-P",
+                  "path": "5,HTML,1,BODY,15,DIV,6,DIV,0,DIV,5,SECTION,10,DIV,0,DIV,6,ARTICLE,0,DIV,0,DIV,0,DIV,4,DIV,29,P",
+                  "selector": "div.row > div.col-md-8 > div.clearfix > p",
+                  "boundingRect": {
+                    "top": 3699,
+                    "bottom": 3843,
+                    "left": 102,
+                    "right": 858,
+                    "width": 756,
+                    "height": 144
+                  },
+                  "snippet": "<p>",
+                  "nodeLabel": "With a greater emphasis on preventive health, demand for dieticians and nutriti…"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-14-A",
+            "path": "5,HTML,1,BODY,15,DIV,6,DIV,0,DIV,5,SECTION,10,DIV,0,DIV,6,ARTICLE,0,DIV,0,DIV,0,DIV,4,DIV,33,P,1,A",
+            "selector": "div.col-md-8 > div.clearfix > p > a",
+            "boundingRect": {
+              "top": 4065,
+              "bottom": 4087,
+              "left": 140,
+              "right": 253,
+              "width": 113,
+              "height": 22
+            },
+            "snippet": "<a href=\"https://www.njc.edu/program/health-care-transfer/nursing-tract-emphasis-cu…\" data-uw-rm-brl=\"PR\" data-uw-original-href=\"https://www.njc.edu/program/health-care-transfer/nursing-tract-emphasis-cu…\">",
+            "nodeLabel": "nursing field",
+            "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 2.85:1 with the surrounding text. (Minimum contrast is 3:1, link text: #4d2de8, surrounding text: #000000)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+          },
+          "subItems": {
+            "type": "subitems",
+            "items": [
+              {
+                "relatedNode": {
+                  "type": "node",
+                  "lhId": "1-15-P",
+                  "path": "5,HTML,1,BODY,15,DIV,6,DIV,0,DIV,5,SECTION,10,DIV,0,DIV,6,ARTICLE,0,DIV,0,DIV,0,DIV,4,DIV,33,P",
+                  "selector": "div.row > div.col-md-8 > div.clearfix > p",
+                  "boundingRect": {
+                    "top": 4062,
+                    "bottom": 4178,
+                    "left": 102,
+                    "right": 858,
+                    "width": 756,
+                    "height": 115
+                  },
+                  "snippet": "<p>",
+                  "nodeLabel": "The nursing field is expanding by leaps and bounds, and there are many levels o…"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-16-A",
+            "path": "5,HTML,1,BODY,15,DIV,6,DIV,0,DIV,5,SECTION,10,DIV,0,DIV,6,ARTICLE,0,DIV,0,DIV,0,DIV,4,DIV,35,P,1,A",
+            "selector": "div.col-md-8 > div.clearfix > p > a",
+            "boundingRect": {
+              "top": 4323,
+              "bottom": 4345,
+              "left": 102,
+              "right": 274,
+              "width": 172,
+              "height": 22
+            },
+            "snippet": "<a href=\"https://money.usnews.com/careers/best-jobs/nurse-practitioner\" data-uw-rm-brl=\"PR\" data-uw-original-href=\"https://money.usnews.com/careers/best-jobs/nurse-practitioner\">",
+            "nodeLabel": "Nurse practitioners",
+            "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 2.85:1 with the surrounding text. (Minimum contrast is 3:1, link text: #4d2de8, surrounding text: #000000)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+          },
+          "subItems": {
+            "type": "subitems",
+            "items": [
+              {
+                "relatedNode": {
+                  "type": "node",
+                  "lhId": "1-17-P",
+                  "path": "5,HTML,1,BODY,15,DIV,6,DIV,0,DIV,5,SECTION,10,DIV,0,DIV,6,ARTICLE,0,DIV,0,DIV,0,DIV,4,DIV,35,P",
+                  "selector": "div.row > div.col-md-8 > div.clearfix > p",
+                  "boundingRect": {
+                    "top": 4292,
+                    "bottom": 4436,
+                    "left": 102,
+                    "right": 858,
+                    "width": 756,
+                    "height": 144
+                  },
+                  "snippet": "<p>",
+                  "nodeLabel": "With additional education, registered nurses can expand their career opportunit…"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-18-A",
+            "path": "5,HTML,1,BODY,15,DIV,6,DIV,0,DIV,5,SECTION,10,DIV,0,DIV,6,ARTICLE,0,DIV,0,DIV,0,DIV,4,DIV,40,P,1,A",
+            "selector": "div.col-md-8 > div.clearfix > p > a",
+            "boundingRect": {
+              "top": 4768,
+              "bottom": 4790,
+              "left": 219,
+              "right": 454,
+              "width": 235,
+              "height": 22
+            },
+            "snippet": "<a href=\"https://www.njc.edu/program/health-care-transfer/pre-occupational-therapy\" data-uw-rm-brl=\"PR\" data-uw-original-href=\"https://www.njc.edu/program/health-care-transfer/pre-occupational-therapy\">",
+            "nodeLabel": "occupational therapy field",
+            "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 2.85:1 with the surrounding text. (Minimum contrast is 3:1, link text: #4d2de8, surrounding text: #000000)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+          },
+          "subItems": {
+            "type": "subitems",
+            "items": [
+              {
+                "relatedNode": {
+                  "type": "node",
+                  "lhId": "1-19-P",
+                  "path": "5,HTML,1,BODY,15,DIV,6,DIV,0,DIV,5,SECTION,10,DIV,0,DIV,6,ARTICLE,0,DIV,0,DIV,0,DIV,4,DIV,40,P",
+                  "selector": "div.row > div.col-md-8 > div.clearfix > p",
+                  "boundingRect": {
+                    "top": 4765,
+                    "bottom": 4852,
+                    "left": 102,
+                    "right": 858,
+                    "width": 756,
+                    "height": 86
+                  },
+                  "snippet": "<p>",
+                  "nodeLabel": "Because the occupational therapy field is growing rapidly, demand for occupatio…"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-20-A",
+            "path": "5,HTML,1,BODY,15,DIV,6,DIV,0,DIV,5,SECTION,10,DIV,0,DIV,6,ARTICLE,0,DIV,0,DIV,0,DIV,4,DIV,43,P,1,A",
+            "selector": "div.col-md-8 > div.clearfix > p > a",
+            "boundingRect": {
+              "top": 4984,
+              "bottom": 5006,
+              "left": 233,
+              "right": 472,
+              "width": 239,
+              "height": 22
+            },
+            "snippet": "<a href=\"https://www.bls.gov/ooh/healthcare/physician-assistants.htm\" data-uw-rm-brl=\"PR\" data-uw-original-href=\"https://www.bls.gov/ooh/healthcare/physician-assistants.htm\">",
+            "nodeLabel": "physical therapy assistants",
+            "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 2.85:1 with the surrounding text. (Minimum contrast is 3:1, link text: #4d2de8, surrounding text: #000000)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+          },
+          "subItems": {
+            "type": "subitems",
+            "items": [
+              {
+                "relatedNode": {
+                  "type": "node",
+                  "lhId": "1-21-P",
+                  "path": "5,HTML,1,BODY,15,DIV,6,DIV,0,DIV,5,SECTION,10,DIV,0,DIV,6,ARTICLE,0,DIV,0,DIV,0,DIV,4,DIV,43,P",
+                  "selector": "div.row > div.col-md-8 > div.clearfix > p",
+                  "boundingRect": {
+                    "top": 4981,
+                    "bottom": 5068,
+                    "left": 102,
+                    "right": 858,
+                    "width": 756,
+                    "height": 86
+                  },
+                  "snippet": "<p>",
+                  "nodeLabel": "The BLS ranks physical therapy assistants #7 on its Top 20 fastest-growing occu…"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-22-A",
+            "path": "5,HTML,1,BODY,15,DIV,6,DIV,0,DIV,5,SECTION,10,DIV,0,DIV,6,ARTICLE,0,DIV,0,DIV,0,DIV,4,DIV,47,P,2,A",
+            "selector": "div.col-md-8 > div.clearfix > p > a",
+            "boundingRect": {
+              "top": 5290,
+              "bottom": 5312,
+              "left": 404,
+              "right": 573,
+              "width": 169,
+              "height": 22
+            },
+            "snippet": "<a href=\"https://www.njc.edu/program/health-care-transfer/physicians-assistant-emph…\" data-uw-rm-brl=\"PR\" data-uw-original-href=\"https://www.njc.edu/program/health-care-transfer/physicians-assistant-emph…\">",
+            "nodeLabel": "physician assistant",
+            "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 2.85:1 with the surrounding text. (Minimum contrast is 3:1, link text: #4d2de8, surrounding text: #000000)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+          },
+          "subItems": {
+            "type": "subitems",
+            "items": [
+              {
+                "relatedNode": {
+                  "type": "node",
+                  "lhId": "1-23-P",
+                  "path": "5,HTML,1,BODY,15,DIV,6,DIV,0,DIV,5,SECTION,10,DIV,0,DIV,6,ARTICLE,0,DIV,0,DIV,0,DIV,4,DIV,47,P",
+                  "selector": "div.row > div.col-md-8 > div.clearfix > p",
+                  "boundingRect": {
+                    "top": 5287,
+                    "bottom": 5374,
+                    "left": 102,
+                    "right": 858,
+                    "width": 756,
+                    "height": 86
+                  },
+                  "snippet": "<p>",
+                  "nodeLabel": "U.S. News & World Report ranked physician assistant as #1 on its 100 Best Jobs …"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-24-A",
+            "path": "5,HTML,1,BODY,15,DIV,6,DIV,0,DIV,5,SECTION,10,DIV,0,DIV,6,ARTICLE,0,DIV,0,DIV,0,DIV,4,DIV,54,P,1,A",
+            "selector": "div.col-md-8 > div.clearfix > p > a",
+            "boundingRect": {
+              "top": 5985,
+              "bottom": 6036,
+              "left": 102,
+              "right": 814,
+              "width": 712,
+              "height": 51
+            },
+            "snippet": "<a href=\"https://www.njc.edu/program/health-care-transfer\" data-uw-rm-brl=\"PR\" data-uw-original-href=\"https://www.njc.edu/program/health-care-transfer\">",
+            "nodeLabel": "health transfer associate degree programs",
+            "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 2.85:1 with the surrounding text. (Minimum contrast is 3:1, link text: #4d2de8, surrounding text: #000000)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+          },
+          "subItems": {
+            "type": "subitems",
+            "items": [
+              {
+                "relatedNode": {
+                  "type": "node",
+                  "lhId": "1-25-P",
+                  "path": "5,HTML,1,BODY,15,DIV,6,DIV,0,DIV,5,SECTION,10,DIV,0,DIV,6,ARTICLE,0,DIV,0,DIV,0,DIV,4,DIV,54,P",
+                  "selector": "div.row > div.col-md-8 > div.clearfix > p",
+                  "boundingRect": {
+                    "top": 5953,
+                    "bottom": 6040,
+                    "left": 102,
+                    "right": 858,
+                    "width": 756,
+                    "height": 86
+                  },
+                  "snippet": "<p>",
+                  "nodeLabel": "Whatever health care profession you want to pursue, Northeastern Junior College…"
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "debugData": {
+        "type": "debugdata",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2a",
+          "wcag141",
+          "TTv5",
+          "TT13.a",
+          "EN-301-549",
+          "EN-9.1.4.1"
+        ]
+      }
+    },
+    "errorCount": 12
+  }
+]

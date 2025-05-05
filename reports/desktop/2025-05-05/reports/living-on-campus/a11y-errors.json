@@ -1,0 +1,272 @@
+[
+  {
+    "id": "aria-allowed-role",
+    "title": "Uses ARIA roles on incompatible elements",
+    "description": "Many HTML elements can only be assigned certain ARIA roles. Using ARIA roles where they are not allowed can interfere with the accessibility of the web page. [Learn more about ARIA roles](https://dequeuniversity.com/rules/axe/4.10/aria-allowed-role).",
+    "score": 0,
+    "scoreDisplayMode": "binary",
+    "details": {
+      "type": "table",
+      "headings": [
+        {
+          "key": "node",
+          "valueType": "node",
+          "subItemsHeading": {
+            "key": "relatedNode",
+            "valueType": "node"
+          },
+          "label": "Failing Elements"
+        }
+      ],
+      "items": [
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-0-LABEL",
+            "path": "5,HTML,1,BODY,15,DIV,5,HEADER,2,DIV,8,DIV,0,LABEL",
+            "selector": "header#navbar-main > div.navbar-header > div.menu-toggle-wrapper > label",
+            "boundingRect": {
+              "top": 105,
+              "bottom": 121,
+              "left": 1290,
+              "right": 1310,
+              "width": 20,
+              "height": 16
+            },
+            "snippet": "<label for=\"menu-toggle\" tabindex=\"0\" aria-label=\"Open Menu\" role=\"button\">",
+            "nodeLabel": "Open Menu",
+            "explanation": "Fix any of the following:\n  ARIA role button is not allowed for given element"
+          }
+        }
+      ],
+      "debugData": {
+        "type": "debugdata",
+        "impact": "minor",
+        "tags": [
+          "cat.aria",
+          "best-practice"
+        ]
+      }
+    },
+    "errorCount": 1
+  },
+  {
+    "id": "aria-prohibited-attr",
+    "title": "Elements use prohibited ARIA attributes",
+    "description": "Using ARIA attributes in roles where they are prohibited can mean that important information is not communicated to users of assistive technologies. [Learn more about prohibited ARIA roles](https://dequeuniversity.com/rules/axe/4.10/aria-prohibited-attr).",
+    "score": 0,
+    "scoreDisplayMode": "binary",
+    "details": {
+      "type": "table",
+      "headings": [
+        {
+          "key": "node",
+          "valueType": "node",
+          "subItemsHeading": {
+            "key": "relatedNode",
+            "valueType": "node"
+          },
+          "label": "Failing Elements"
+        }
+      ],
+      "items": [
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-1-A",
+            "path": "5,HTML,1,BODY,15,DIV,4,A",
+            "selector": "body.navbar-is-fixed-top > div.dialog-off-canvas-main-canvas > a#top",
+            "boundingRect": {
+              "top": 168,
+              "bottom": 168,
+              "left": 0,
+              "right": 0,
+              "width": 0,
+              "height": 0
+            },
+            "snippet": "<a id=\"top\" data-uw-rm-kbnav=\"anohref\" tabindex=\"0\" aria-label=\"Open this option\" data-uw-rm-empty-ctrl=\"\">",
+            "nodeLabel": "Open this option",
+            "explanation": "Fix all of the following:\n  aria-label attribute cannot be used on a a with no valid role attribute."
+          }
+        },
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-2-A",
+            "path": "5,HTML,1,BODY,15,DIV,6,DIV,0,DIV,0,A",
+            "selector": "div.dialog-off-canvas-main-canvas > div#main-container > div#content > a#main-content",
+            "boundingRect": {
+              "top": 168,
+              "bottom": 168,
+              "left": 0,
+              "right": 0,
+              "width": 0,
+              "height": 0
+            },
+            "snippet": "<a id=\"main-content\" data-uw-rm-kbnav=\"anohref\" tabindex=\"0\" aria-label=\"Open this option\" data-uw-rm-empty-ctrl=\"\">",
+            "nodeLabel": "Open this option",
+            "explanation": "Fix all of the following:\n  aria-label attribute cannot be used on a a with no valid role attribute."
+          }
+        }
+      ],
+      "debugData": {
+        "type": "debugdata",
+        "impact": "serious",
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag412",
+          "EN-301-549",
+          "EN-9.4.1.2"
+        ]
+      }
+    },
+    "errorCount": 2
+  },
+  {
+    "id": "image-redundant-alt",
+    "title": "Image elements have `[alt]` attributes that are redundant text.",
+    "description": "Informative elements should aim for short, descriptive alternative text. Alternative text that is exactly the same as the text adjacent to the link or image is potentially confusing for screen reader users, because the text will be read twice. [Learn more about the `alt` attribute](https://dequeuniversity.com/rules/axe/4.10/image-redundant-alt).",
+    "score": 0,
+    "scoreDisplayMode": "binary",
+    "details": {
+      "type": "table",
+      "headings": [
+        {
+          "key": "node",
+          "valueType": "node",
+          "subItemsHeading": {
+            "key": "relatedNode",
+            "valueType": "node"
+          },
+          "label": "Failing Elements"
+        }
+      ],
+      "items": [
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-3-IMG",
+            "path": "5,HTML,1,BODY,15,DIV,6,DIV,0,DIV,5,SECTION,10,DIV,0,DIV,4,ARTICLE,0,DIV,14,SECTION,4,DIV,3,DIV,3,DIV,0,DIV,3,DIV,4,A,0,DIV,0,DIV,0,DIV,12,IMG",
+            "selector": "div.imagebg > div.background-image-holder > div.image > img.image-style-area-of-interest-grid",
+            "boundingRect": {
+              "top": 532,
+              "bottom": 894,
+              "left": 0,
+              "right": 434,
+              "width": 434,
+              "height": 362
+            },
+            "snippet": "<img loading=\"lazy\" src=\"/sites/default/files/styles/area_of_interest_grid/public/dorm/thumbnail/do…\" width=\"600\" height=\"500\" alt=\"Blue Spruce Hall\" class=\"image-style-area-of-interest-grid\" data-uw-rm-alt-original=\"Blue Spruce Hall\" data-uw-rm-alt=\"ALT\">",
+            "nodeLabel": "Blue Spruce Hall",
+            "explanation": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+          }
+        },
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-4-IMG",
+            "path": "5,HTML,1,BODY,15,DIV,6,DIV,0,DIV,5,SECTION,10,DIV,0,DIV,4,ARTICLE,0,DIV,14,SECTION,4,DIV,3,DIV,3,DIV,0,DIV,4,DIV,4,A,0,DIV,0,DIV,0,DIV,12,IMG",
+            "selector": "div.imagebg > div.background-image-holder > div.image > img.image-style-area-of-interest-grid",
+            "boundingRect": {
+              "top": 532,
+              "bottom": 894,
+              "left": 458,
+              "right": 892,
+              "width": 434,
+              "height": 362
+            },
+            "snippet": "<img loading=\"lazy\" src=\"/sites/default/files/styles/area_of_interest_grid/public/dorm/thumbnail/do…\" width=\"600\" height=\"500\" alt=\"Dowis Hall\" class=\"image-style-area-of-interest-grid\" data-uw-rm-alt-original=\"Dowis Hall\" data-uw-rm-alt=\"ALT\">",
+            "nodeLabel": "Dowis Hall",
+            "explanation": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+          }
+        },
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-5-IMG",
+            "path": "5,HTML,1,BODY,15,DIV,6,DIV,0,DIV,5,SECTION,10,DIV,0,DIV,4,ARTICLE,0,DIV,14,SECTION,4,DIV,3,DIV,3,DIV,0,DIV,5,DIV,4,A,0,DIV,0,DIV,0,DIV,12,IMG",
+            "selector": "div.imagebg > div.background-image-holder > div.image > img.image-style-area-of-interest-grid",
+            "boundingRect": {
+              "top": 532,
+              "bottom": 894,
+              "left": 916,
+              "right": 1350,
+              "width": 434,
+              "height": 362
+            },
+            "snippet": "<img loading=\"lazy\" src=\"/sites/default/files/styles/area_of_interest_grid/public/dorm/thumbnail/do…\" width=\"600\" height=\"500\" alt=\"Guenzi-Read-Breidenbach (GRB) Hall\" class=\"image-style-area-of-interest-grid\" data-uw-rm-alt-original=\"Guenzi-Read-Breidenbach (GRB) Hall\" data-uw-rm-alt=\"ALT\">",
+            "nodeLabel": "Guenzi-Read-Breidenbach (GRB) Hall",
+            "explanation": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+          }
+        },
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-6-IMG",
+            "path": "5,HTML,1,BODY,15,DIV,6,DIV,0,DIV,5,SECTION,10,DIV,0,DIV,4,ARTICLE,0,DIV,14,SECTION,4,DIV,3,DIV,3,DIV,0,DIV,6,DIV,4,A,0,DIV,0,DIV,0,DIV,12,IMG",
+            "selector": "div.imagebg > div.background-image-holder > div.image > img.image-style-area-of-interest-grid",
+            "boundingRect": {
+              "top": 894,
+              "bottom": 1255,
+              "left": 0,
+              "right": 434,
+              "width": 434,
+              "height": 362
+            },
+            "snippet": "<img loading=\"lazy\" src=\"/sites/default/files/styles/area_of_interest_grid/public/dorm/thumbnail/do…\" width=\"600\" height=\"500\" alt=\"Herboldsheimer (Herbie) Hall\" class=\"image-style-area-of-interest-grid\" data-uw-rm-alt-original=\"Herboldsheimer (Herbie) Hall\" data-uw-rm-alt=\"ALT\">",
+            "nodeLabel": "Herboldsheimer (Herbie) Hall",
+            "explanation": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+          }
+        },
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-7-IMG",
+            "path": "5,HTML,1,BODY,15,DIV,6,DIV,0,DIV,5,SECTION,10,DIV,0,DIV,4,ARTICLE,0,DIV,14,SECTION,4,DIV,3,DIV,3,DIV,0,DIV,7,DIV,4,A,0,DIV,0,DIV,0,DIV,12,IMG",
+            "selector": "div.imagebg > div.background-image-holder > div.image > img.image-style-area-of-interest-grid",
+            "boundingRect": {
+              "top": 894,
+              "bottom": 1255,
+              "left": 458,
+              "right": 892,
+              "width": 434,
+              "height": 362
+            },
+            "snippet": "<img loading=\"lazy\" src=\"/sites/default/files/styles/area_of_interest_grid/public/dorm/thumbnail/do…\" width=\"600\" height=\"500\" alt=\"Poole Hall\" class=\"image-style-area-of-interest-grid\" data-uw-rm-alt-original=\"Poole Hall\" data-uw-rm-alt=\"ALT\">",
+            "nodeLabel": "Poole Hall",
+            "explanation": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+          }
+        },
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-8-IMG",
+            "path": "5,HTML,1,BODY,15,DIV,6,DIV,0,DIV,5,SECTION,10,DIV,0,DIV,4,ARTICLE,0,DIV,14,SECTION,4,DIV,3,DIV,3,DIV,0,DIV,8,DIV,4,A,0,DIV,0,DIV,0,DIV,12,IMG",
+            "selector": "div.imagebg > div.background-image-holder > div.image > img.image-style-area-of-interest-grid",
+            "boundingRect": {
+              "top": 894,
+              "bottom": 1255,
+              "left": 916,
+              "right": 1350,
+              "width": 434,
+              "height": 362
+            },
+            "snippet": "<img loading=\"lazy\" src=\"/sites/default/files/styles/area_of_interest_grid/public/dorm/thumbnail/do…\" width=\"600\" height=\"500\" alt=\"Williams Hall\" class=\"image-style-area-of-interest-grid\" data-uw-rm-alt-original=\"Williams Hall\" data-uw-rm-alt=\"ALT\">",
+            "nodeLabel": "Williams Hall",
+            "explanation": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+          }
+        }
+      ],
+      "debugData": {
+        "type": "debugdata",
+        "impact": "minor",
+        "tags": [
+          "cat.text-alternatives",
+          "best-practice"
+        ]
+      }
+    },
+    "errorCount": 6
+  }
+]

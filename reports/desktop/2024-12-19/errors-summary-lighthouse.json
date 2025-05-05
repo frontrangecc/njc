@@ -1,1 +1,14 @@
-{}
+{
+  "color-contrast": 442,
+  "aria-prohibited-attr": 401,
+  "aria-allowed-role": 200,
+  "link-in-text-block": 94,
+  "aria-allowed-attr": 32,
+  "aria-hidden-focus": 31,
+  "image-redundant-alt": 15,
+  "table-fake-caption": 8,
+  "label-content-name-mismatch": 4,
+  "target-size": 2,
+  "image-alt": 1,
+  "td-has-header": 1
+}

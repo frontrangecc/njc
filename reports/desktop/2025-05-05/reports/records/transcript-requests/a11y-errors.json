@@ -1,0 +1,474 @@
+[
+  {
+    "id": "aria-allowed-attr",
+    "title": "`[aria-*]` attributes do not match their roles",
+    "description": "Each ARIA `role` supports a specific subset of `aria-*` attributes. Mismatching these invalidates the `aria-*` attributes. [Learn how to match ARIA attributes to their roles](https://dequeuniversity.com/rules/axe/4.10/aria-allowed-attr).",
+    "score": 0,
+    "scoreDisplayMode": "binary",
+    "details": {
+      "type": "table",
+      "headings": [
+        {
+          "key": "node",
+          "valueType": "node",
+          "subItemsHeading": {
+            "key": "relatedNode",
+            "valueType": "node"
+          },
+          "label": "Failing Elements"
+        }
+      ],
+      "items": [
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-0-SPAN",
+            "path": "5,HTML,1,BODY,15,DIV,6,DIV,0,DIV,4,SECTION,10,DIV,0,DIV,4,DIV,0,UL,1,LI,0,SPAN",
+            "selector": "div.scrolling-nav > ul.clearfix > li.nav-item > span.dropdown-toggle",
+            "boundingRect": {
+              "top": 348,
+              "bottom": 382,
+              "left": 118,
+              "right": 303,
+              "width": 185,
+              "height": 34
+            },
+            "snippet": "<span class=\"dropdown-toggle nav-link-\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\" aria-haspopup=\"true\">",
+            "nodeLabel": "Transfer Information",
+            "explanation": "Fix all of the following:\n  ARIA attribute is not allowed: aria-expanded=\"false\""
+          }
+        }
+      ],
+      "debugData": {
+        "type": "debugdata",
+        "impact": "critical",
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag412",
+          "EN-301-549",
+          "EN-9.4.1.2"
+        ]
+      }
+    },
+    "errorCount": 1
+  },
+  {
+    "id": "aria-allowed-role",
+    "title": "Uses ARIA roles on incompatible elements",
+    "description": "Many HTML elements can only be assigned certain ARIA roles. Using ARIA roles where they are not allowed can interfere with the accessibility of the web page. [Learn more about ARIA roles](https://dequeuniversity.com/rules/axe/4.10/aria-allowed-role).",
+    "score": 0,
+    "scoreDisplayMode": "binary",
+    "details": {
+      "type": "table",
+      "headings": [
+        {
+          "key": "node",
+          "valueType": "node",
+          "subItemsHeading": {
+            "key": "relatedNode",
+            "valueType": "node"
+          },
+          "label": "Failing Elements"
+        }
+      ],
+      "items": [
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-1-LABEL",
+            "path": "5,HTML,1,BODY,15,DIV,5,HEADER,2,DIV,8,DIV,0,LABEL",
+            "selector": "header#navbar-main > div.navbar-header > div.menu-toggle-wrapper > label",
+            "boundingRect": {
+              "top": 105,
+              "bottom": 121,
+              "left": 1290,
+              "right": 1310,
+              "width": 20,
+              "height": 16
+            },
+            "snippet": "<label for=\"menu-toggle\" tabindex=\"0\" aria-label=\"Open Menu\" role=\"button\">",
+            "nodeLabel": "Open Menu",
+            "explanation": "Fix any of the following:\n  ARIA role button is not allowed for given element"
+          }
+        }
+      ],
+      "debugData": {
+        "type": "debugdata",
+        "impact": "minor",
+        "tags": [
+          "cat.aria",
+          "best-practice"
+        ]
+      }
+    },
+    "errorCount": 1
+  },
+  {
+    "id": "aria-prohibited-attr",
+    "title": "Elements use prohibited ARIA attributes",
+    "description": "Using ARIA attributes in roles where they are prohibited can mean that important information is not communicated to users of assistive technologies. [Learn more about prohibited ARIA roles](https://dequeuniversity.com/rules/axe/4.10/aria-prohibited-attr).",
+    "score": 0,
+    "scoreDisplayMode": "binary",
+    "details": {
+      "type": "table",
+      "headings": [
+        {
+          "key": "node",
+          "valueType": "node",
+          "subItemsHeading": {
+            "key": "relatedNode",
+            "valueType": "node"
+          },
+          "label": "Failing Elements"
+        }
+      ],
+      "items": [
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-2-A",
+            "path": "5,HTML,1,BODY,15,DIV,4,A",
+            "selector": "body.section-organization > div.dialog-off-canvas-main-canvas > a#top",
+            "boundingRect": {
+              "top": 168,
+              "bottom": 168,
+              "left": 0,
+              "right": 0,
+              "width": 0,
+              "height": 0
+            },
+            "snippet": "<a id=\"top\" data-uw-rm-kbnav=\"anohref\" tabindex=\"0\" aria-label=\"Open this option\" data-uw-rm-empty-ctrl=\"\">",
+            "nodeLabel": "Open this option",
+            "explanation": "Fix all of the following:\n  aria-label attribute cannot be used on a a with no valid role attribute."
+          }
+        },
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-3-A",
+            "path": "5,HTML,1,BODY,15,DIV,6,DIV,1,DIV,0,DIV,0,DIV,0,A",
+            "selector": "div.container > div.row > div#content > a#main-content",
+            "boundingRect": {
+              "top": 402,
+              "bottom": 402,
+              "left": 102,
+              "right": 102,
+              "width": 0,
+              "height": 0
+            },
+            "snippet": "<a id=\"main-content\" data-uw-rm-kbnav=\"anohref\" tabindex=\"0\" aria-label=\"Open this option\" data-uw-rm-empty-ctrl=\"\">",
+            "nodeLabel": "Open this option",
+            "explanation": "Fix all of the following:\n  aria-label attribute cannot be used on a a with no valid role attribute."
+          }
+        }
+      ],
+      "debugData": {
+        "type": "debugdata",
+        "impact": "serious",
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag412",
+          "EN-301-549",
+          "EN-9.4.1.2"
+        ]
+      }
+    },
+    "errorCount": 2
+  },
+  {
+    "id": "link-in-text-block",
+    "title": "Links rely on color to be distinguishable.",
+    "description": "Low-contrast text is difficult or impossible for many users to read. Link text that is discernible improves the experience for users with low vision. [Learn how to make links distinguishable](https://dequeuniversity.com/rules/axe/4.10/link-in-text-block).",
+    "score": 0,
+    "scoreDisplayMode": "binary",
+    "details": {
+      "type": "table",
+      "headings": [
+        {
+          "key": "node",
+          "valueType": "node",
+          "subItemsHeading": {
+            "key": "relatedNode",
+            "valueType": "node"
+          },
+          "label": "Failing Elements"
+        }
+      ],
+      "items": [
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-4-A",
+            "path": "5,HTML,1,BODY,15,DIV,6,DIV,1,DIV,0,DIV,0,DIV,5,SECTION,22,DIV,0,DIV,7,DIV,10,DIV,10,P,1,A",
+            "selector": "div.node > div.clearfix > p > a",
+            "boundingRect": {
+              "top": 1707,
+              "bottom": 1729,
+              "left": 489,
+              "right": 717,
+              "width": 228,
+              "height": 22
+            },
+            "snippet": "<a href=\"mailto:NJC_Records-Admissions_Process_Office@njc.edu\" aria-label=\"send an email to NJC_Records-Admissions_Process_Office@njc.edu\" data-uw-rm-vglnk=\"\" uw-rm-vague-link-id=\"mailto:njc_records-admissions_process_office@njc.edu$send an email to njc_…\">",
+            "nodeLabel": "njcrecordsoffice@njc.edu",
+            "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 2.85:1 with the surrounding text. (Minimum contrast is 3:1, link text: #4d2de8, surrounding text: #000000)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+          },
+          "subItems": {
+            "type": "subitems",
+            "items": [
+              {
+                "relatedNode": {
+                  "type": "node",
+                  "lhId": "1-6-P",
+                  "path": "5,HTML,1,BODY,15,DIV,6,DIV,1,DIV,0,DIV,0,DIV,5,SECTION,22,DIV,0,DIV,7,DIV,10,DIV,10,P",
+                  "selector": "div.block-inner > div.node > div.clearfix > p",
+                  "boundingRect": {
+                    "top": 1704,
+                    "bottom": 1733,
+                    "left": 102,
+                    "right": 858,
+                    "width": 756,
+                    "height": 29
+                  },
+                  "snippet": "<p>",
+                  "nodeLabel": "Contact Records at (970) 521-7007 or email njcrecordsoffice@njc.edu"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-5-A",
+            "path": "5,HTML,1,BODY,15,DIV,6,DIV,1,DIV,0,DIV,0,DIV,5,SECTION,22,DIV,0,DIV,7,DIV,10,DIV,23,P,3,A",
+            "selector": "div.node > div.clearfix > p > a",
+            "boundingRect": {
+              "top": 3348,
+              "bottom": 3370,
+              "left": 102,
+              "right": 330,
+              "width": 228,
+              "height": 22
+            },
+            "snippet": "<a href=\"mailto:NJC_Records-Admissions_Process_Office@njc.edu\" aria-label=\"send an email to NJC_Records-Admissions_Process_Office@njc.edu\" data-uw-rm-vglnk=\"\" uw-rm-vague-link-id=\"mailto:njc_records-admissions_process_office@njc.edu$send an email to njc_…\">",
+            "nodeLabel": "njcrecordsoffice@njc.edu",
+            "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 2.85:1 with the surrounding text. (Minimum contrast is 3:1, link text: #4d2de8, surrounding text: #000000)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+          },
+          "subItems": {
+            "type": "subitems",
+            "items": [
+              {
+                "relatedNode": {
+                  "type": "node",
+                  "lhId": "1-7-P",
+                  "path": "5,HTML,1,BODY,15,DIV,6,DIV,1,DIV,0,DIV,0,DIV,5,SECTION,22,DIV,0,DIV,7,DIV,10,DIV,23,P",
+                  "selector": "div.block-inner > div.node > div.clearfix > p",
+                  "boundingRect": {
+                    "top": 3201,
+                    "bottom": 3374,
+                    "left": 102,
+                    "right": 858,
+                    "width": 756,
+                    "height": 173
+                  },
+                  "snippet": "<p>",
+                  "nodeLabel": "Transcript requests are filled during regular business hours. Requests made dur…"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-8-A",
+            "path": "5,HTML,1,BODY,15,DIV,6,DIV,1,DIV,0,DIV,0,DIV,5,SECTION,22,DIV,0,DIV,7,DIV,10,DIV,26,P,1,A",
+            "selector": "div.node > div.clearfix > p > a",
+            "boundingRect": {
+              "top": 3532,
+              "bottom": 3554,
+              "left": 241,
+              "right": 637,
+              "width": 397,
+              "height": 22
+            },
+            "snippet": "<a href=\"http://www.cde.state.co.us/postsecondary/ged_documents\" target=\"_blank\" data-uw-rm-brl=\"PR\" data-uw-original-href=\"http://www.cde.state.co.us/postsecondary/ged_documents\" aria-label=\"Colorado Department of Education website - open in a new tab\" data-uw-rm-ext-link=\"\" uw-rm-external-link-id=\"http://www.cde.state.co.us/postsecondary/ged_documents$coloradodepartmento…\">",
+            "nodeLabel": "Colorado Department of Education website ",
+            "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 2.85:1 with the surrounding text. (Minimum contrast is 3:1, link text: #4d2de8, surrounding text: #000000)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+          },
+          "subItems": {
+            "type": "subitems",
+            "items": [
+              {
+                "relatedNode": {
+                  "type": "node",
+                  "lhId": "1-9-P",
+                  "path": "5,HTML,1,BODY,15,DIV,6,DIV,1,DIV,0,DIV,0,DIV,5,SECTION,22,DIV,0,DIV,7,DIV,10,DIV,26,P",
+                  "selector": "div.block-inner > div.node > div.clearfix > p",
+                  "boundingRect": {
+                    "top": 3529,
+                    "bottom": 3587,
+                    "left": 102,
+                    "right": 858,
+                    "width": 756,
+                    "height": 58
+                  },
+                  "snippet": "<p>",
+                  "nodeLabel": "Please visit the Colorado Department of Education website and follow the direct…"
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "debugData": {
+        "type": "debugdata",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2a",
+          "wcag141",
+          "TTv5",
+          "TT13.a",
+          "EN-301-549",
+          "EN-9.1.4.1"
+        ]
+      }
+    },
+    "errorCount": 3
+  },
+  {
+    "id": "label-content-name-mismatch",
+    "title": "Elements with visible text labels do not have matching accessible names.",
+    "description": "Visible text labels that do not match the accessible name can result in a confusing experience for screen reader users. [Learn more about accessible names](https://dequeuniversity.com/rules/axe/4.10/label-content-name-mismatch).",
+    "score": 0,
+    "scoreDisplayMode": "binary",
+    "details": {
+      "type": "table",
+      "headings": [
+        {
+          "key": "node",
+          "valueType": "node",
+          "subItemsHeading": {
+            "key": "relatedNode",
+            "valueType": "node"
+          },
+          "label": "Failing Elements"
+        }
+      ],
+      "items": [
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-4-A",
+            "path": "5,HTML,1,BODY,15,DIV,6,DIV,1,DIV,0,DIV,0,DIV,5,SECTION,22,DIV,0,DIV,7,DIV,10,DIV,10,P,1,A",
+            "selector": "div.node > div.clearfix > p > a",
+            "boundingRect": {
+              "top": 1707,
+              "bottom": 1729,
+              "left": 489,
+              "right": 717,
+              "width": 228,
+              "height": 22
+            },
+            "snippet": "<a href=\"mailto:NJC_Records-Admissions_Process_Office@njc.edu\" aria-label=\"send an email to NJC_Records-Admissions_Process_Office@njc.edu\" data-uw-rm-vglnk=\"\" uw-rm-vague-link-id=\"mailto:njc_records-admissions_process_office@njc.edu$send an email to njc_…\">",
+            "nodeLabel": "njcrecordsoffice@njc.edu",
+            "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+          }
+        },
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-5-A",
+            "path": "5,HTML,1,BODY,15,DIV,6,DIV,1,DIV,0,DIV,0,DIV,5,SECTION,22,DIV,0,DIV,7,DIV,10,DIV,23,P,3,A",
+            "selector": "div.node > div.clearfix > p > a",
+            "boundingRect": {
+              "top": 3348,
+              "bottom": 3370,
+              "left": 102,
+              "right": 330,
+              "width": 228,
+              "height": 22
+            },
+            "snippet": "<a href=\"mailto:NJC_Records-Admissions_Process_Office@njc.edu\" aria-label=\"send an email to NJC_Records-Admissions_Process_Office@njc.edu\" data-uw-rm-vglnk=\"\" uw-rm-vague-link-id=\"mailto:njc_records-admissions_process_office@njc.edu$send an email to njc_…\">",
+            "nodeLabel": "njcrecordsoffice@njc.edu",
+            "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+          }
+        }
+      ],
+      "debugData": {
+        "type": "debugdata",
+        "impact": "serious",
+        "tags": [
+          "cat.semantics",
+          "wcag21a",
+          "wcag253",
+          "EN-301-549",
+          "EN-9.2.5.3",
+          "experimental"
+        ]
+      }
+    },
+    "errorCount": 2
+  },
+  {
+    "id": "table-fake-caption",
+    "title": "Tables do not use `<caption>` instead of cells with the `[colspan]` attribute to indicate a caption.",
+    "description": "Screen readers have features to make navigating tables easier. Ensuring that tables use the actual caption element instead of cells with the `[colspan]` attribute may improve the experience for screen reader users. [Learn more about captions](https://dequeuniversity.com/rules/axe/4.10/table-fake-caption).",
+    "score": 0,
+    "scoreDisplayMode": "binary",
+    "details": {
+      "type": "table",
+      "headings": [
+        {
+          "key": "node",
+          "valueType": "node",
+          "subItemsHeading": {
+            "key": "relatedNode",
+            "valueType": "node"
+          },
+          "label": "Failing Elements"
+        }
+      ],
+      "items": [
+        {
+          "node": {
+            "type": "node",
+            "lhId": "1-10-TABLE",
+            "path": "5,HTML,1,BODY,15,DIV,6,DIV,1,DIV,0,DIV,0,DIV,5,SECTION,22,DIV,0,DIV,7,DIV,10,DIV,7,TABLE",
+            "selector": "div.block-inner > div.node > div.clearfix > table",
+            "boundingRect": {
+              "top": 1360,
+              "bottom": 1529,
+              "left": 102,
+              "right": 858,
+              "width": 756,
+              "height": 169
+            },
+            "snippet": "<table>",
+            "nodeLabel": "Spring 2025 Transcript Dates\nSpring 2025 Grades posted to transcript\tMay 19, 12…",
+            "explanation": "Fix all of the following:\n  The first child of the table should be a caption instead of a table cell"
+          }
+        }
+      ],
+      "debugData": {
+        "type": "debugdata",
+        "impact": "serious",
+        "tags": [
+          "cat.tables",
+          "experimental",
+          "wcag2a",
+          "wcag131",
+          "section508",
+          "section508.22.g",
+          "EN-301-549",
+          "EN-9.1.3.1"
+        ]
+      }
+    },
+    "errorCount": 1
+  }
+]
