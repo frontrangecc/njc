@@ -1,0 +1,15 @@
+{
+  "aria-prohibited-attr": 395,
+  "color-contrast": 364,
+  "aria-allowed-role": 200,
+  "link-in-text-block": 78,
+  "aria-hidden-focus": 38,
+  "aria-allowed-attr": 30,
+  "image-redundant-alt": 15,
+  "table-fake-caption": 8,
+  "label-content-name-mismatch": 4,
+  "target-size": 2,
+  "heading-order": 2,
+  "image-alt": 1,
+  "td-has-header": 1
+}
